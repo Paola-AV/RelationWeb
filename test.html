@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaciones Impropias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <section class="section1 d-flex flex-column align-items-center justify-content-center text-center">
+        <img class="corazon" src="./src/corazon-index.png" alt="">
+        <p class=""><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y desde entonces no han
+            dejado de conectarse! 🎮 Él la agregó como amiga y comenzaron a jugar juntos todos los días. 💫✨</p>
+    </section>
+
+    <section class="section2 d-flex justify-content-center">
+        <img class="manos-game" src="./src/c1-p2-manos.svg" alt="">
+        <img class="icon1" src="./src/coin-2.svg" style="">
+        <img class="icon2" src="./src/diamond-2.svg" style=""> 
+        <img class="icon3" src="./src/star2.svg" style="">
+        <img class="icon4" src="./src/diamond-3.svg" style="">
+    </section>
+
+    <section class="section3 d-flex justify-content-center">
+        <img class="pareja" src="./src/pareja.svg" alt="">
+        <div class="chat">
+            <img src="./src/txt-1.svg" alt="">
+        </div>
+    </section>
+
+    <section class="section4 d-flex justify-content-center">
+        <img class="regalo" src="./src/c1-p4-celular.svg" alt="">
+        <h2>¡Has recibido un regalo!</h2>
+        <div class="caja-texto">
+            <p>¡Sebas sorprendió a Cami dentro del juego con el regalo que siempre soñó: ¡gemas doradas! 💎✨ Ella siempre había deseado tenerlas, pero no tenía dinero para comprarlas. 🤩</p>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="caja-texto2">
+            <p>¡Con los días, Sebas le pidió el número de teléfono a Cami y comenzaron a hablar por WhatsApp! 📱 La conexión que tenían en el juego se extendió más allá de la pantalla, y la diversión continuó en cada mensaje que compartían 🌟</p>
+        </div>
+    </section>
+
+    <section class="section6 d-flex justify-content-center">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img class="manos-chat" src="./src/manos-6.svg" alt="">
+        <img class="texto-chat" src="./src/texto-6.svg" alt="">
+    </section>
+
+    <section class="section7 d-flex justify-content-center">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
+        <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
+        <div class="texto-section7">
+            <p class="">Cami y Sebas tenían una relación a distancia. Sebas constantemente le pedía fotos</p>
+            <p class="">Cada vez que discutían por las fotos, Sebas le dejaba de hablar por varios días y tampoco le enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.</p>
+        </div>
+    </section>
+
+    <section class="section8 d-flex justify-content-center">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img class="mano-6" src="./src/manos-6.svg" alt="">
+        <img class="chat-8" src="./src/8-txt.svg" alt="">
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.onload = function () {
+            lax.init()
+
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+                return window.scrollY
+            })
+
+            // Add animation bindings to elements
+            lax.addElements('.selector', {
+                scrollY: {
+                    translateX: [
+                        ["elInY", "elCenterY", "elOutY"],
+                        [0, 'screenWidth/2', 'screenWidth'],
+                    ]
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
