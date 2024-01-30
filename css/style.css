@@ -1,3 +1,4 @@
+
 section {
     height: 100vh;
     width: 100%;
@@ -8,6 +9,11 @@ section {
 .section1 {
     background-image: url("../src/fondo.png");
     z-index: -10;
+    height: 130vh;
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    
 }
 
 .corazon {
@@ -30,14 +36,16 @@ section {
 .section2 {
     background-image: url("../src/bg-2.svg");
     position: relative;
-    overflow: hidden;
+    opacity: 1;
+    z-index: 2;
+    height: 130vh;
 }
 
 .icon1 {
     width:50px;
     position: absolute;
     right: 450px;
-    bottom: 20px;
+    bottom: 30rem;
     transform: translate3d(0, 0, 0);
     will-change: transform;  
 }
@@ -45,24 +53,27 @@ section {
     width:76px;
     position: absolute;
     left: 450px;
-    bottom: 50px;
+    bottom: 20rem;
 }
 .icon3 {
     width:60px;
     position: absolute;
     left: 100px;
-    top: 40%;
+    top: 30%;
 }
 .icon4 {
     width:76px;
     position: absolute;
     right: 20px;
-    top: 200px;
+    top: 10rem;
 }
 
 .manos-game {
     width: 80%;
+    position:absolute;
     align-self: flex-end;
+   transform: translateY(80rem);
+   transition: 8s ease-out;
 }
 
 .section3 {

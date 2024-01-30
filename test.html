@@ -10,23 +10,34 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
 
 <body>
 
     <section class="section1 d-flex flex-column align-items-center justify-content-center text-center">
-        <img class="corazon" src="./src/corazon-index.png" alt="">
-        <p class=""><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y desde entonces no han
+        <img class="corazon" id="corazon" src="./src/corazon-index.png" alt="">
+        <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y desde entonces
+            no han
             dejado de conectarse! 🎮 Él la agregó como amiga y comenzaron a jugar juntos todos los días. 💫✨</p>
-    </section>
-
-    <section class="section2 d-flex justify-content-center">
-        <img class="manos-game" src="./src/c1-p2-manos.svg" alt="">
-        <img class="icon1" src="./src/coin-2.svg" style="">
-        <img class="icon2" src="./src/diamond-2.svg" style=""> 
+        <img class="icon1" id="icon1" src="./src/coin-2.svg" style="">
+        <img class="icon2" src="./src/diamond-2.svg" style="">
         <img class="icon3" src="./src/star2.svg" style="">
         <img class="icon4" src="./src/diamond-3.svg" style="">
+        <img class="manos-game" id="manos-game" src="./src/c1-p2-manos.svg" alt="" style="">
     </section>
+
+   
+
+    <!--<section class="section2 d-flex justify-content-center" id="section2">
+        <img class="manos-game" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
+        <img class="icon1" id="icon1" src="./src/coin-2.svg" style="">
+        <img class="icon2" src="./src/diamond-2.svg" style="">
+        <img class="icon3" src="./src/star2.svg" style="">
+        <img class="icon4" src="./src/diamond-3.svg" style="">
+    </section>-->
 
     <section class="section3 d-flex justify-content-center">
         <img class="pareja" src="./src/pareja.svg" alt="">
@@ -39,41 +50,50 @@
         <img class="regalo" src="./src/c1-p4-celular.svg" alt="">
         <h2>¡Has recibido un regalo!</h2>
         <div class="caja-texto">
-            <p>¡Sebas sorprendió a Cami dentro del juego con el regalo que siempre soñó: ¡gemas doradas! 💎✨ Ella siempre había deseado tenerlas, pero no tenía dinero para comprarlas. 🤩</p>
+            <p>¡Sebas sorprendió a Cami dentro del juego con el regalo que siempre soñó: ¡gemas doradas! 💎✨ Ella
+                siempre había deseado tenerlas, pero no tenía dinero para comprarlas. 🤩</p>
         </div>
     </section>
 
     <section class="section5">
         <div class="caja-texto2">
-            <p>¡Con los días, Sebas le pidió el número de teléfono a Cami y comenzaron a hablar por WhatsApp! 📱 La conexión que tenían en el juego se extendió más allá de la pantalla, y la diversión continuó en cada mensaje que compartían 🌟</p>
+            <p>¡Con los días, Sebas le pidió el número de teléfono a Cami y comenzaron a hablar por WhatsApp! 📱 La
+                conexión que tenían en el juego se extendió más allá de la pantalla, y la diversión continuó en cada
+                mensaje que compartían 🌟</p>
         </div>
     </section>
 
     <section class="section6 d-flex justify-content-center">
-        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
+            src="./src/bg-6.svg" alt="">
         <img class="manos-chat" src="./src/manos-6.svg" alt="">
         <img class="texto-chat" src="./src/texto-6.svg" alt="">
     </section>
 
     <section class="section7 d-flex justify-content-center">
-        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
+            src="./src/bg-6.svg" alt="">
         <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
         <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
         <div class="texto-section7">
             <p class="">Cami y Sebas tenían una relación a distancia. Sebas constantemente le pedía fotos</p>
-            <p class="">Cada vez que discutían por las fotos, Sebas le dejaba de hablar por varios días y tampoco le enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.</p>
+            <p class="">Cada vez que discutían por las fotos, Sebas le dejaba de hablar por varios días y tampoco le
+                enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.</p>
         </div>
     </section>
 
     <section class="section8 d-flex justify-content-center">
-        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;" src="./src/bg-6.svg" alt="">
+        <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
+            src="./src/bg-6.svg" alt="">
         <img class="mano-6" src="./src/manos-6.svg" alt="">
         <img class="chat-8" src="./src/8-txt.svg" alt="">
     </section>
 
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 
     <script>
         window.onload = function () {
@@ -94,6 +114,64 @@
                 }
             })
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imagen = document.getElementById('manos-game');
+            const pSection1 = document.getElementById('pSection1');
+            const corazon = document.getElementById('corazon');
+            const section2 = document.querySelector('.section1');
+            let allowMovement = false;
+
+            window.addEventListener('scroll', function () {
+                // Espera 3 segundos antes de permitir el movimiento de las manos
+                if (!allowMovement) {
+                    setTimeout(() => {
+                        allowMovement = true;
+                    }, 2000);
+                }
+
+                if (allowMovement) {
+                    // Ajusta la posición Y de la imagen según el desplazamiento
+                    const desplazamientoY = window.scrollY;
+                    const nuevaPosicionY = Math.min(desplazamientoY, -75);
+                    imagen.style.transform = `translateY(${nuevaPosicionY}rem)`;
+                    // Cambia la imagen de fondo de la sección después de que 'manos-game' ha subido a una posición específica
+                    if (nuevaPosicionY === -75) {
+                        section2.style.transition = 'background-image 2s, opacity 2s';
+                        section2.style.backgroundImage = "url('../src/bg-2.svg')";
+                        pSection1.style.visibility='hidden';
+                        corazon.style.visibility='hidden';
+                    }
+
+                }
+            });
+
+        });
+    </script>
+
+    </script>
+    <script>
+        //let manos = document.getElementById("manos-game");
+        //let section2 = document.getElementById("section2");
+        //window.addEventListener('scroll', function () {
+
+        //  var value = window.scrollY;
+
+        //manos.style.transform = 'translate3d(0,' + (value * -0.9) + 'px, 0)';
+
+        // Ajusta estos valores según tus necesidades
+        // let opacity = 1 - value / 5;
+        //section2.style.opacity = opacity < 0 ? 0 : opacity;
+
+        // });
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
