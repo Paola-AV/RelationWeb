@@ -17,27 +17,26 @@
 
 <body>
 
+
     <section class="section1 d-flex flex-column align-items-center justify-content-center text-center">
         <img class="corazon" id="corazon" src="./src/corazon-index.png" alt="">
-        <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y desde entonces
+        <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y
+            desde entonces
             no han
             dejado de conectarse! 🎮 Él la agregó como amiga y comenzaron a jugar juntos todos los días. 💫✨</p>
-        <img class="icon1" id="icon1" src="./src/coin-2.svg" style="">
-        <img class="icon2" src="./src/diamond-2.svg" style="">
-        <img class="icon3" src="./src/star2.svg" style="">
-        <img class="icon4" src="./src/diamond-3.svg" style="">
-        <img class="manos-game" id="manos-game" src="./src/c1-p2-manos.svg" alt="" style="">
     </section>
 
-   
 
-    <!--<section class="section2 d-flex justify-content-center" id="section2">
-        <img class="manos-game" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
-        <img class="icon1" id="icon1" src="./src/coin-2.svg" style="">
-        <img class="icon2" src="./src/diamond-2.svg" style="">
-        <img class="icon3" src="./src/star2.svg" style="">
-        <img class="icon4" src="./src/diamond-3.svg" style="">
-    </section>-->
+
+    <section class="section2 d-flex justify-content-center" id="section2">
+        <div id="content"></div>
+        <img class="icon3" data-aos="fade-right" src="./src/star2.svg" style="">
+        <img class="icon4" data-aos="fade-left" src="./src/diamond-3.svg" style="">
+        <img class="manos-game" data-aos="fade-up"  id="manos-game" src="./src/c1-p2-manos.svg" alt="">
+        <img class="icon1" data-aos="fade-left" id="icon1" src="./src/coin-2.svg" style="">
+        <img class="icon2" data-aos="fade-right" src="./src/diamond-2.svg" style="">
+        
+    </section>
 
     <section class="section3 d-flex justify-content-center">
         <img class="pareja" src="./src/pareja.svg" alt="">
@@ -115,57 +114,65 @@
             })
         }
     </script>
-    <script>
+   <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             const imagen = document.getElementById('manos-game');
             const pSection1 = document.getElementById('pSection1');
             const corazon = document.getElementById('corazon');
-            const section2 = document.querySelector('.section1');
+            const section2 = document.querySelector('.section2');
             let allowMovement = false;
 
             window.addEventListener('scroll', function () {
                 // Espera 3 segundos antes de permitir el movimiento de las manos
-                if (!allowMovement) {
-                    setTimeout(() => {
-                        allowMovement = true;
-                    }, 2000);
-                }
+                //if (!allowMovement) {
+                //  setTimeout(() => {
+                //    allowMovement = true;
+                //}, 2000);
+                //}
 
-                if (allowMovement) {
-                    // Ajusta la posición Y de la imagen según el desplazamiento
-                    const desplazamientoY = window.scrollY;
-                    const nuevaPosicionY = Math.min(desplazamientoY, -75);
-                    imagen.style.transform = `translateY(${nuevaPosicionY}rem)`;
-                    // Cambia la imagen de fondo de la sección después de que 'manos-game' ha subido a una posición específica
-                    if (nuevaPosicionY === -75) {
-                        section2.style.transition = 'background-image 2s, opacity 2s';
-                        section2.style.backgroundImage = "url('../src/bg-2.svg')";
-                        pSection1.style.visibility='hidden';
-                        corazon.style.visibility='hidden';
-                    }
+                //
+                // Ajusta la posición Y de la imagen según el desplazamiento
+                const desplazamientoY = window.scrollY;
+                const nuevaPosicionY = Math.min(desplazamientoY, 4);
+                const opacidad = 1 - Math.abs(nuevaPosicionY / 4);
+                section2.style.opacity = opacidad;
+                
+                //imagen.style.transform = `translateY(${nuevaPosicionY}rem)`;
+                if (nuevaPosicionY === -75) {
 
+                    pSection1.style.visibility = 'hidden';
+                    corazon.style.visibility = 'hidden';
                 }
+                //}
             });
 
         });
-    </script>
+    </script>-->
 
     </script>
     <script>
-        //let manos = document.getElementById("manos-game");
-        //let section2 = document.getElementById("section2");
-        //window.addEventListener('scroll', function () {
+       
+        document.addEventListener('DOMContentLoaded', function () {
+            const section2 = document.querySelector('.section2');
+            const content = document.getElementById('content');
+            const imagen = document.getElementById('manos-game');
+            window.addEventListener('scroll', function () {
+                // Obtén la posición del section en relación con la parte superior de la ventana
+                const sectionTop = section2.getBoundingClientRect().bottom;
 
-        //  var value = window.scrollY;
-
-        //manos.style.transform = 'translate3d(0,' + (value * -0.9) + 'px, 0)';
-
-        // Ajusta estos valores según tus necesidades
-        // let opacity = 1 - value / 5;
-        //section2.style.opacity = opacity < 0 ? 0 : opacity;
-
-        // });
-
+                // Altura de la ventana
+                const windowHeight = window.innerHeight;
+                console.log(window.innerHeight+"**********//");
+                console.log(sectionTop+"**********||||");
+                // Condición para verificar si el section está en la vista
+                if (sectionTop <= window.innerHeight+50) {
+                    content.style.transition = 'background-image 5s ease-out, opacity 4s ease-in-out';
+                    content.style.backgroundImage = "url('../src/bg-2.svg')";
+                    imagen.src = "../src/manos-img.svg";
+                    content.style.opacity = 1;
+                } 
+            });
+        });
 
     </script>
 
