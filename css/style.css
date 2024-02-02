@@ -11,7 +11,7 @@ section {
     background-size: cover;
     scroll-snap-align: start;
 }
-
+/*section 1*/
 .section1 {
     background-image: url("../src/fondo.png");
     z-index: -10;
@@ -40,6 +40,7 @@ section {
     color: #FE2960;
 }
 
+/*section 2*/
 .section2 {
     position: relative;
     opacity: 1;
@@ -94,19 +95,6 @@ section {
     z-index: 1;
 }
 
-.octi {
-    position: absolute;
-    width: 70%;
-    height: auto;
-    z-index: 100;
-    top: 30%;
-    bottom: 0;
-    left: 15%;
-    right: 0;
-    opacity: 0;
-    transition-duration: 1.5s;
-}
-
 .manos-game {
     width: 80%;
     position:relative;
@@ -114,6 +102,8 @@ section {
    /*transform: translateY(80rem);*/
    transition-duration: 0.5s;
 }
+
+/*section 3*/
 
 .section3 {
     background-color: #373151;
@@ -129,14 +119,24 @@ section {
 }
 
 .chat {
+    display: grid;
     background: #005E73 url(../src/patron-bg-chat.svg);
     width: 800px;
     height: 100%;
     z-index: 1;
 }
 
+#message1{
+    width: 65%;
+    justify-self: start;
+}
 
+#message2 {
+    width: 50%;
+justify-self: end;
+}
 
+/*section 4*/
 .section4 {
     background: #2B2547;
     position: relative;
@@ -172,12 +172,51 @@ section {
     top: 200px;
 }
 
-.section5 {
-    background-image: url(../src/fondo-cuarto1.svg);
-    position: relative;
-}
 
-.caja-texto2 {
+/*seccion 5****/
+#seccion5-historia1{
+    width:100%;
+    position: relative;
+    height:1080px;
+    left: 0;
+    background:#2B2547;
+  }
+  
+  
+  
+  #texto-section5{
+    max-width: 600px;
+    position: absolute;
+    background:#FF4C7F;
+    padding: 2em;
+    border-radius:20px;
+    top:50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index:18;
+  
+  }
+  
+  
+  #texto-section5 p{
+    font-family: 'Outfit', sans-serif;
+    font-size:1.6em; 
+    color:#FFF;
+  
+  }
+  
+  
+  .room2{
+    width: 100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    transform: translate(-50%,-50%);
+    z-index:2;
+  
+  }
+
+  .caja-texto2 {
     z-index: 1;
     color: white;
     background-color: #FF4C7F;
@@ -186,13 +225,9 @@ section {
     border-radius: 20px;
     text-align: center;
     top: 50%;
-    right: 150px;
-    position: absolute;
-}
+    right: 150px;}
 
-.caja-texto2 p{
-    margin: 0;
-}
+/*section 6*/
 
 .section6 {
     background: #2B1845;
@@ -209,6 +244,8 @@ section {
     position: absolute;
     height: 100%;
 }
+
+/*section 7*/
 
 .section7 {
     background: #2B1845;
@@ -250,6 +287,7 @@ section {
     bottom: 100px;
 }
 
+/*section 8*/
 .section8 {
     background: #2B1845;
     position: relative;
