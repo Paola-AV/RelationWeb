@@ -32,7 +32,9 @@
         <div id="content"></div>
         <img class="icon3" data-aos="fade-right" src="./src/star2.svg" style="">
         <img class="icon4" data-aos="fade-left" src="./src/diamond-3.svg" style="">
-        <img class="octi" id="octi" src="./src//octupus.svg">
+
+        <!--<img class="octi" id="octi" src="./src//octupus.svg">-->
+
         <img class="manos-game" data-aos="fade-up"  id="manos-game" src="./src/c1-p2-manos.svg" alt="">
         <img class="icon1" data-aos="fade-left" id="icon1" src="./src/coin-2.svg" style="">
         <img class="icon2" data-aos="fade-right" src="./src/diamond-2.svg" style="">
@@ -170,9 +172,11 @@
                 if (sectionTop <= window.innerHeight+50) {
                     content.style.transition = 'background-image 2s ease-out, opacity 2s ease-in-out';
                     content.style.backgroundImage = "url('../src/bg-2.svg')";
-                    octi.style.opacity=1;
+
+                    //octi.style.opacity=1;
                     setTimeout(()=>{
-                       // imagen.src = "../src/manos-img.svg";
+                       imagen.src = "../src/manos-img.svg";
+
                     },2500);
                     
                     content.style.opacity = 1;
