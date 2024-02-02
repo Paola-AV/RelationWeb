@@ -160,6 +160,7 @@
             const section2 = document.querySelector('.section2');
             const content = document.getElementById('content');
             const imagen = document.getElementById('manos-game');
+            const octi = document.getElementById('octi');
             window.addEventListener('scroll', function () {
                 // Obtén la posición del section en relación con la parte superior de la ventana
                 const sectionTop = section2.getBoundingClientRect().bottom;
@@ -170,11 +171,13 @@
                 console.log(sectionTop+"**********||||");
                 // Condición para verificar si el section está en la vista
                 if (sectionTop <= window.innerHeight+50) {
-                    content.style.transition = 'background-image 5s ease-out, opacity 4s ease-in-out';
+                    content.style.transition = 'background-image 2s ease-out, opacity 2s ease-in-out';
                     content.style.backgroundImage = "url('../src/bg-2.svg')";
+
                     //octi.style.opacity=1;
                     setTimeout(()=>{
                        imagen.src = "../src/manos-img.svg";
+
                     },2500);
                     
                     content.style.opacity = 1;

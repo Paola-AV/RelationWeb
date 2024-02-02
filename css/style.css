@@ -59,7 +59,7 @@ section {
     bottom: 0;
     position: absolute;
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 0.1s;
     z-index: 0;
 }
 
@@ -93,12 +93,26 @@ section {
     top: 60%;
     z-index: 1;
 }
+
+.octi {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    z-index: 100;
+    top: 30%;
+    bottom: 0;
+    left: 15%;
+    right: 0;
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+
 .manos-game {
     width: 80%;
     position:relative;
     align-self: flex-end;
    /*transform: translateY(80rem);*/
-   transition: 8s ease-out;
+   transition-duration: 0.5s;
 }
 
 .section3 {
