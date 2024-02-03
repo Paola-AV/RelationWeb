@@ -239,6 +239,7 @@ justify-self: end;
     position: absolute;
     height: 100%;
     align-self: center;
+    width: 80%;
 }
 
 .texto-chat {
@@ -259,6 +260,7 @@ justify-self: end;
     left: 20px;
     bottom: 50px;
     z-index: 2;
+    width: 40%;
 }
 
 .mano-cel-der {
@@ -267,6 +269,7 @@ justify-self: end;
     right: 20px;
     top: 50px;
     z-index: 1;
+    width: 40%;
 }
 
 .texto-section7 {
@@ -328,12 +331,13 @@ flex-direction: row;
 .section8 {
     background: #2B1845;
     position: relative;
-    height: 110vh;
+    height: 120vh;
 }
 
 .mano-6 {
     position: absolute;
     height: 100%;
+    width: 80%;
 }
 
 .chat-8 {
@@ -363,7 +367,7 @@ flex-direction: row;
 
 .mensajeSec8H{
     width: 80%;
-    justify-self: start;
+    
 }
 
 .mensajeSec8M{
