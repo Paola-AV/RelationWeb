@@ -82,27 +82,59 @@
     <section class="section6 d-flex justify-content-center">
         <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
             src="./src/bg-6.svg" alt="">
-        <img class="manos-chat" src="./src/manos-6.svg" alt="">
-        <img class="texto-chat" src="./src/texto-6.svg" alt="">
+        <div class="sec8Cel">
+            <img class="manos-chat" class="mano-6" src="./src//manosCel.svg" alt="">
+            <div class="texto-sec8">
+                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" src="./src/1.3.png" alt="">
+                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" src="./src/2.3.png" alt="">
+                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500" src="./src/3.3.png" alt="">
+                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" src="./src/4.3.png" alt="">
+                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2500" src="./src/5.3.png" alt="">
+                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2900" src="./src/6.3.png" alt="">
+            </div>
+        </div>
+
     </section>
     <!--seccion 7 -->
     <section class="section7 d-flex justify-content-center">
         <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
             src="./src/bg-6.svg" alt="">
-        <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
-        <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
+        <img class="mano-cel-izq" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"
+            src="./src/7-mano-izq.svg" alt="">
+        <img class="mano-cel-der" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"
+            src="./src/7-mano-der.svg" alt="">
         <div class="texto-section7">
-            <p class="">Cami y Sebas tenían una relación a distancia. Sebas constantemente le pedía fotos</p>
-            <p class="">Cada vez que discutían por las fotos, Sebas le dejaba de hablar por varios días y tampoco le
-                enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.</p>
+            <div class="text1-sect7" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="1000">
+                <p class="">Cami y Sebas tenían una
+                    relación a distancia. Sebas constantemente le pedía fotos</p>
+                <img src="./src/emojis-7.svg" alt="" id="emojis-7">
+            </div>
+            <div class="text1-sect7B" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="1000">
+                <p class="">Cada vez que discutían por
+                    las fotos, Sebas le dejaba de hablar por varios días y tampoco le
+                    enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.
+                </p>
+                <div id="emojis-sect7">
+                    <img src="./src/7-flags.svg" alt="" id="emoji-7">
+                    <img src="./src/7-emoji.svg" alt="" id="emoji-7">
+                </div>
+            </div>
+
         </div>
     </section>
     <!--seccion 8 -->
     <section class="section8 d-flex justify-content-center">
         <img style="position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; background-position: center;"
             src="./src/bg-6.svg" alt="">
-        <img class="mano-6" src="./src/manos-6.svg" alt="">
-        <img class="chat-8" src="./src/8-txt.svg" alt="">
+        <div class="sec8Cel">
+            <img class="mano-6" src="./src/manosCel.svg" alt="">
+            <div class="texto-sec8">
+                <img class="mensajeSec8H" src="./src/1.png" alt="">
+                <img class="mensajeSec8M" src="./src/2.png" alt="">
+                <img class="mensajeSec8H" src="./src/3.png" alt="">
+                <img class="mensajeSec8M" src="./src/4.png" alt="">
+            </div>
+        </div>
     </section>
 
 
@@ -160,6 +192,33 @@
             });
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mensajes = document.querySelectorAll('.mensajeSec8H');
+
+            function mostrarMensajes() {
+                mensajes.forEach(function (mensaje, index) {
+                    setTimeout(function () {
+                        mensaje.style.opacity = 1;
+                        mensaje.style.transform = 'translateX(0)';
+                    }, index * 500);
+                });
+            }
+
+            // Agrega un listener para activar la animación cuando el usuario haga scroll
+            window.addEventListener('scroll', function () {
+                var scrollPosition = window.scrollY + window.innerHeight;
+                var elementPosition = mensajes[0].offsetTop + mensajes[0].offsetHeight;
+
+                if (scrollPosition >= elementPosition) {
+                    mostrarMensajes();
+                    // Desactiva el listener después de mostrar los mensajes
+                    window.removeEventListener('scroll', arguments.callee);
+                }
+            });
+        });
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
