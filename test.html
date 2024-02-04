@@ -17,7 +17,7 @@
 
 <body>
 
-
+    <!--seccion 1--> 
     <section class="section1 d-flex flex-column align-items-center justify-content-center text-center">
         <img class="corazon" id="corazon" src="./src/corazon-index.png" alt="">
         <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y
@@ -27,7 +27,7 @@
     </section>
 
 
-
+    <!--seccion 2--> 
     <section class="section2 d-flex justify-content-center" id="section2">
         <div id="content"></div>
         <img class="icon3" data-aos="fade-right" src="./src/star2.svg" style="">
@@ -37,7 +37,7 @@
         <img class="icon2" data-aos="fade-right" src="./src/diamond-2.svg" style="">
 
     </section>
-
+    <!--seccion 3--> 
     <section class="section3 d-flex justify-content-center">
         <img class="pareja" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" src="./src/boy.svg"
             alt="">
@@ -54,10 +54,10 @@
         <img class="pareja" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2000" src="./src/girl.svg"
             alt="">
     </section>
-
+    <!--seccion 4--> 
     <section class="section4 d-flex justify-content-center">
         <img class="regalo" src="./src/c1-p4-celular.svg" alt="">
-        <h2>¡Has recibido un regalo!</h2>
+        <h2 id="sec4H2">¡Has recibido un regalo!</h2>
         <div data-aos="zoom-out" data-aos-duration="1000" class="caja-texto">
             <p>¡Sebas sorprendió a Cami dentro del juego con el regalo que siempre soñó: ¡gemas doradas! 💎✨ Ella
                 siempre había deseado tenerlas, pero no tenía dinero para comprarlas. 🤩</p>
@@ -85,12 +85,18 @@
         <div class="sec8Cel">
             <img class="manos-chat" class="mano-6" src="./src//manosCel.svg" alt="">
             <div class="texto-sec8">
-                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" src="./src/1.3.png" alt="">
-                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" src="./src/2.3.png" alt="">
-                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500" src="./src/3.3.png" alt="">
-                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" src="./src/4.3.png" alt="">
-                <img class="mensajeSec8H" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2500" src="./src/5.3.png" alt="">
-                <img class="mensajeSec8M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2900" src="./src/6.3.png" alt="">
+                <img class="mensajeSec" id="M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100"
+                    src="./src/1.3.png" alt="">
+                <img class="mensajeSec" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1500"
+                    src="./src/2.3.png" alt="">
+                <img class="mensajeSec" id="M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500"
+                    src="./src/3.3.png" alt="">
+                <img class="mensajeSec" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000"
+                    src="./src/4.3.png" alt="">
+                <img class="mensajeSec" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2500"
+                    src="./src/5.3.png" alt="">
+                <img class="mensajeSec" id="M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2900"
+                    src="./src/6.3.png" alt="">
             </div>
         </div>
 
@@ -129,16 +135,23 @@
         <div class="sec8Cel">
             <img class="mano-6" src="./src/manosCel.svg" alt="">
             <div class="texto-sec8">
-                <img class="mensajeSec8H" src="./src/1.png" alt="">
-                <img class="mensajeSec8M" src="./src/2.png" alt="">
-                <img class="mensajeSec8H" src="./src/3.png" alt="">
-                <img class="mensajeSec8M" src="./src/4.png" alt="">
+                <img class="mensajeSec" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500"
+                    src="./src/1.png" alt="">
+                <img class="mensajeSec" id="M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000"
+                    src="./src/2.png" alt="">
+                <img class="mensajeSec" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1500"
+                    src="./src/3.png" alt="">
+                <img class="mensajeSec" id="M" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000"
+                    src="./src/4.png" alt="">
             </div>
         </div>
     </section>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
@@ -221,10 +234,25 @@
         });
     </script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        var miImagen = document.getElementById("manos-game");
+        var mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+        function cambiarSrcSegunMediaQuery() {
+            if (mediaQuery.matches && miImagen.src !== "./src/manosCelMobile.svg") {
+                miImagen.src = "./src/manosCelMobile.svg";
+            } else if (!mediaQuery.matches && miImagen.src !== "./src/c1-p2-manos.svg") {
+                miImagen.src = "./src/c1-p2-manos.svg";
+            }
+        }
+
+        cambiarSrcSegunMediaQuery();
+
+        mediaQuery.addListener(cambiarSrcSegunMediaQuery);
     </script>
+
+
+
 </body>
 
 </html>
