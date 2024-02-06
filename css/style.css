@@ -14,33 +14,28 @@ section {
 }
 /*section 1*/
 .section1 {
-    background-image: url("../src/fondo.png");
-    z-index: -10;
     height: 100vh;
-    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../src/fondo.png");
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -10;
     position: sticky;
     top: 0;
 }
 
-.corazon {
-    width: 300px;
-    transform: scale(2);
-    margin-bottom: 20px;
-    /* transition: transform 0.09s ease; */
+.corazon{
+    padding-top: 2rem;
+    width: 20%;
 }
 
-.section1 p {
-    max-width: 500px;
-    font-size: 1.3rem;
-    opacity: 0; /* Inicialmente invisible */
-    position: sticky;
-    top: 0;
+#pSection1{
+    font-size: 2rem;
+    max-width: 50%;
 }
-
-.section1 p span {
-    color: #FE2960;
-}
-
 /*section 2*/
 .section2 {
     position: relative;
@@ -48,7 +43,7 @@ section {
     z-index: 2;
     height: 100vh;
     transition: background-image 4s ease-out, opacity 0 ease-out; 
-
+    background-size: 100% 100%;
 
 }
 
@@ -108,6 +103,9 @@ section {
 /*section 3*/
 
 .section3 {
+    display: flex;
+   
+    justify-content: center;
     background-color: #373151;
     position: relative;
     overflow: hidden;
@@ -123,7 +121,7 @@ section {
 .chat {
     display: grid;
     background: #005E73 url(../src/patron-bg-chat.svg);
-    width: 800px;
+    width: 40%;
     height: 100%;
     z-index: 1;
 }
@@ -384,7 +382,19 @@ flex-direction: row;
     justify-self: end;
 }
 
-@media (max-width: 1500px) {}
+@media (max-width: 1024px) {
+    .section1{
+        background-image: url("../src/fondo.png");
+    }
+}
+@media (max-width: 640px) {
+    #pSection1{
+        font-size: 1rem;
+        max-width: 60%;
+    }
+}
+
+/*
 
 @media (max-width: 1024px) {
     .section1 {
@@ -627,4 +637,4 @@ flex-direction: row;
 }
 
 
-
+*/
