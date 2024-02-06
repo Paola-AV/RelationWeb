@@ -14,7 +14,7 @@ section {
 }
 /*section 1*/
 .section1 {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,18 +30,20 @@ section {
 .corazon{
     padding-top: 2rem;
     width: 20%;
+    transform: scale(2);
 }
 
 #pSection1{
     font-size: 2rem;
     max-width: 50%;
+    opacity: 0;
 }
 /*section 2*/
 .section2 {
     position: relative;
     opacity: 1;
     z-index: 2;
-    height: 100vh;
+    height: 110vh;
     transition: background-image 4s ease-out, opacity 0 ease-out; 
     background-size: 100% 100%;
 
@@ -133,7 +135,7 @@ section {
 
 #message2 {
     width: 50%;
-justify-self: end;
+    justify-self: end;
 }
 
 /*section 4*/
@@ -391,6 +393,9 @@ flex-direction: row;
     #pSection1{
         font-size: 1rem;
         max-width: 60%;
+    }
+    .caja-texto {
+        width: 60%;
     }
 }
 
