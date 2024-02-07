@@ -34,9 +34,13 @@
         <div id="content"></div>
 
         <img class="manos-game" data-aos="fade-up" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
+        <img class="mision-cumplida" data-aos="fade" data-aos-delay="500" id="" src="./src/octupus.svg" alt="">
+        <img class="icon1" src="./src/coin-2.svg" style="">
+        <img class="icon2" src="./src/diamond-2.svg" style="">
+        <img class="icon3" src="./src/star2.svg" style="">
+        <img class="icon4" src="./src/diamond-3.svg" style="">
 
     </section>
-
     <!--seccion 3--> 
     <section class="section3 ">
 
@@ -192,16 +196,26 @@
                 const windowHeight = window.innerHeight;
                 // Condición para verificar si el section está en la vista
                 if (sectionTop <= window.innerHeight + 50) {
-                    content.style.transition = 'background-image 2s ease-out, opacity 2s ease-in-out';
-                    content.style.backgroundImage = "url('../src/bg-2.svg')";
+                    content.style.transition = 'background-image 1s ease-out, opacity 0.5s ease-in-out';
+                    // content.style.backgroundImage = "url('./src/bg-2.svg')";
                     setTimeout(() => {
-                        imagen.src = "../src/manos-img.svg";
+                        //imagen.src = "./src/manos-img.svg";
 
-                    }, 2500);
+                    }, 1500);
 
                     content.style.opacity = 1;
                 }
             });
+
+            // if (window.innerWidth <= 425) {
+            //     imagen.src = "./src/manosCelMobile.svg";
+            // }
+
+            // window.addEventListener('resize', function () {
+            //     if (window.innerWidth <= 425) {
+            //         imagen.src = "./src/manosCelMobile.svg";
+            //     }
+            // });
         });
 
     </script>
@@ -239,13 +253,13 @@
 
         function cambiarSrcSegunMediaQuery() {
             if (mediaQuery.matches && miImagen.src !== "./src/manosCelMobile.svg") {
-                miImagen.src = "./src/manosCelMobile.svg";
+                // miImagen.src = "./src/manosCelMobile.svg";
             } else if (!mediaQuery.matches && miImagen.src !== "./src/c1-p2-manos.svg") {
                 miImagen.src = "./src/c1-p2-manos.svg";
             }
         }
 
-        cambiarSrcSegunMediaQuery();
+        //cambiarSrcSegunMediaQuery();
 
         mediaQuery.addListener(cambiarSrcSegunMediaQuery);
     </script>
