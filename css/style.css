@@ -416,15 +416,12 @@ section {
     align-self: center;
 
 }
-
-.mensajeSec8H {
-    width: 80%;
-
+.mensajeSec8 {
+    width: 60%;
 }
 
-.mensajeSec8M {
-    width: 80%;
-    justify-self: end;
+#textoSec8{
+    transform: translateY(-4rem);
 }
 
 @media (max-width: 1024px) {
@@ -447,6 +444,9 @@ section {
     }
 
     /* Section 2 */
+    .section2{
+        height: 60vh;
+    }
     .manos-game {
         width: 100%;
     }
@@ -457,6 +457,22 @@ section {
 
     #pSection1 {
         font-size: 1.2rem;
+    }
+    /*section 3*/
+    .section3{
+        height: 70vh;
+    }
+    
+     /*seccion 6*/
+    .texto-sec6{
+        width: 33%;
+        left: 43.5%;
+    }
+    .mensajeSec{
+        width: 80%;
+    }
+    .mensajeSec6{
+        width: 60%;
     }
 }
 @media (max-width: 768px) {
@@ -487,6 +503,17 @@ section {
     #texto-section5{
         width: 60%;
         font-size: 1rem;
+    }
+    /*seccion 6*/
+    .texto-sec6{
+        width: 32%;
+        left: 43.5%;
+    }
+    .mensajeSec{
+        width: 80%;
+    }
+    .mensajeSec6{
+        width: 60%;
     }
 }
 @media (max-width: 640px) {
@@ -546,6 +573,19 @@ section {
 
     .corazon {
         width: 40%;
+    }
+    /*seccion 6*/
+    .texto-sec6{
+        width: 30%;
+    }
+    .mensajeSec{
+        width: 80%;
+    }
+    .mensajeSec6{
+        width: 60%;
+    }
+    #textoSec8{
+        transform: translateY(-2rem);
     }
 }
 
