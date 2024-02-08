@@ -200,11 +200,11 @@
                 const windowHeight = window.innerHeight;
                 // Condición para verificar si el section está en la vista
                 if (sectionTop <= window.innerHeight + 50) {
-
+                    content.style.transition = 'background-image 2s ease-out, opacity 0.5s ease-in-out';
                     // content.style.backgroundImage = "url('./src/bg-2.svg')";
                     setTimeout(() => {
                         imagen.src = "./src/manos-img.svg";
-                        content.style.transition = 'background-image 2s ease-out, opacity 0.5s ease-in-out';
+                        
                     }, 1500);
 
                     content.style.opacity = 1;

@@ -18,7 +18,6 @@ section {
     height: 110vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: url("../src/fondo.png");
     background-position: center;
@@ -29,7 +28,7 @@ section {
 }
 
 .corazon{
-    padding-top: 2rem;
+    padding-top: 8rem;
     width: 20%;
     transform: scale(2);
 }
@@ -170,6 +169,7 @@ section {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: 110vh;
 }
 
 .regalo {
@@ -454,7 +454,10 @@ section {
     .icon4 {
         width: 70px;
     }
-
+    .corazon{
+        padding-top: 12rem;
+        
+    }
     /* Section 2 */
     .section2{
         height: 60vh;
@@ -474,7 +477,13 @@ section {
     .section3{
         height: 70vh;
     }
-    
+    .section4{
+        height: 110vh;
+    }
+
+    .chatContainer{
+        height: 50%;
+    }
      /*seccion 6*/
     .texto-sec6{
         width: 33%;
