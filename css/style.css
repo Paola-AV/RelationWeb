@@ -172,13 +172,24 @@ section {
     height: 110vh;
 }
 
+.containerCelular{
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+
 .regalo {
     width: 75%;
     align-self: center;
+    justify-self: center;
 }
 
 #sec4H2{
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    position: absolute;
+    top: 0;
+    justify-self: center;
+    width: 50%;
 }
 
 .caja-texto {
@@ -190,8 +201,12 @@ section {
     text-align: center;
     align-self: center;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    justify-self: center;
+    transform: translateY(10rem);
 }
 
 
@@ -481,6 +496,10 @@ section {
         height: 110vh;
     }
 
+    /*section 4*/
+    #sec4H2{
+        margin-top: 2rem;
+    }
     .chatContainer{
         height: 50%;
     }
@@ -552,6 +571,9 @@ section {
     }
     .chat{
         width: 60%;
+    }
+    #sec4H2{
+        font-size: 1rem;
     }
     #texto-section5{
         width: 80%;
