@@ -222,7 +222,7 @@ section {
 
 
 /*seccion 5****/
-#seccion5-historia1 {
+.seccion5 {
     width: 100%;
     position: relative;
     height: 100vh;
@@ -278,7 +278,7 @@ section {
 /*section 6*/
 
 .section6 {
-    background: #2B1845;
+    background: transparent;
     position: relative;
     display: flex;
     justify-content: center;
@@ -300,7 +300,7 @@ section {
 
 .manos-chat {
     position: absolute;
-    height: 100%;
+ 
     align-self: center;
     width: 80%;
     justify-self: center;
@@ -336,28 +336,28 @@ section {
 /*section 7*/
 
 .section7 {
-    background: #2B1845;
+    background: transparent;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
 .mano-cel-izq {
-    height: 100%;
+  
     position: absolute;
     left: 20px;
     bottom: 50px;
     z-index: 2;
-    width: 40%;
+    width: 30%;
 }
 
 .mano-cel-der {
-    height: 100%;
+   
     position: absolute;
     right: 20px;
     top: 50px;
     z-index: 1;
-    width: 40%;
+    width: 30%;
 }
 
 .texto-section7 {
@@ -408,16 +408,11 @@ section {
 
 /*section 8*/
 .section8 {
-    background: #2B1845;
+    background: transparent;
     position: relative;
     height: 100vh;
 }
 
-.mano-6 {
-    position: absolute;
-    height: 100%;
-    width: 80%;
-}
 
 .chat-8 {
     position: absolute;
@@ -526,6 +521,38 @@ section {
 #icon39{
     width: 4rem;
 }
+
+/*prueba*/
+
+  
+  main {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top:0;
+  
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sec10 {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+  }
+
+  .sticky-container{
+    background-image: url("../src/fondo68.svg");
+    background-size: cover;
+    background-position: center;
+  }
+
 
 @media (max-width: 1024px) {
      /* Section 1 */
