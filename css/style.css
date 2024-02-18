@@ -1,9 +1,8 @@
+
 body {
     margin: 0;
     padding: 0;
-
 }
-
 
 section {
     height: 100vh;
@@ -27,26 +26,29 @@ section {
     top: 0;
 }
 
-.corazon{
+.corazon {
     padding-top: 8rem;
     width: 20%;
     transform: scale(2);
 }
 
-#pSection1{
+#pSection1 {
+    margin-top: 2rem;
     font-size: 2rem;
     max-width: 50%;
     opacity: 0;
+    font-weight: bold;
+    text-align: center;
 }
+
 /*section 2*/
 .section2 {
     position: relative;
     opacity: 1;
     z-index: 2;
     height: 110vh;
-    transition: background-image 4s ease-out, opacity 0 ease-out; 
+    transition: background-image 4s ease-out, opacity 0 ease-out;
     background-size: 100% 100%;
-
 
 }
 
@@ -62,6 +64,8 @@ section {
     transition-duration: 0.1s;
     z-index: 0;
     background-image: url('../src/bg-2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .icon1 {
@@ -71,7 +75,6 @@ section {
     bottom: 0;
     /* transform: translate3d(0, 0, 0);
     will-change: transform; */
-
 }
 
 .icon2 {
@@ -98,6 +101,14 @@ section {
     z-index: 1;
 }
 
+.icon5 {
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 28%;
+}
+
+
 .manos-game {
     width: 80%;
     height: auto;
@@ -117,11 +128,12 @@ section {
 
 .section3 {
     display: flex;
-   
     justify-content: center;
     background-color: #373151;
     position: relative;
     overflow: hidden;
+    height: 110vh;
+    
 }
 
 .pareja {
@@ -139,7 +151,7 @@ section {
     z-index: 1;
 }
 
-.chatContainer{
+.chatContainer {
     width: 100%;
     height: 90%;
     align-self: center;
@@ -155,10 +167,19 @@ section {
     width: 50%;
     justify-self: end;
 }
+
 #message23 {
     width: 50%;
     justify-self: end;
     z-index: 2;
+}
+
+.corazones-chico {
+    display: none;
+}
+
+.corazones-chica {
+    display: none;
 }
 
 /*section 4*/
@@ -170,9 +191,10 @@ section {
     flex-direction: column;
     text-align: center;
     height: 110vh;
+
 }
 
-.containerCelular{
+.containerCelular {
     width: 100%;
     position: relative;
     display: grid;
@@ -184,7 +206,7 @@ section {
     justify-self: center;
 }
 
-#sec4H2{
+#sec4H2 {
     margin-top: 5rem;
     position: absolute;
     top: 0;
@@ -222,7 +244,7 @@ section {
 
 
 /*seccion 5****/
-.seccion5 {
+#seccion5-historia1 {
     width: 100%;
     position: relative;
     height: 100vh;
@@ -275,20 +297,50 @@ section {
     right: 150px;
 }
 
+/*container de secciones 6-8*/
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: url('../src/fondo68.svg') center/cover no-repeat;    
+
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../src/fondo68.svg') center/cover no-repeat;
+    z-index: -1;
+}
+
+.content{
+    display: grid;
+}
+
+.img{
+    width: 80%;
+}
+
 /*section 6*/
 
 .section6 {
-    background: transparent;
+    background: #2B1845;
     position: relative;
     display: flex;
     justify-content: center;
 }
-.sec6Fondo{
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    opacity: 0.3; 
+
+.sec6Fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
     background-position: center;
 }
 
@@ -300,12 +352,13 @@ section {
 
 .manos-chat {
     position: absolute;
- 
+    height: 100%;
     align-self: center;
     width: 80%;
     justify-self: center;
 }
-.texto-sec6{
+
+.texto-sec6 {
     min-width: 18.5%;
     align-self: center;
     justify-self: center;
@@ -336,28 +389,28 @@ section {
 /*section 7*/
 
 .section7 {
-    background: transparent;
+    background: #2B1845;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
 .mano-cel-izq {
-  
+    height: 100%;
     position: absolute;
     left: 20px;
     bottom: 50px;
     z-index: 2;
-    width: 30%;
+    width: 40%;
 }
 
 .mano-cel-der {
-   
+    height: 100%;
     position: absolute;
     right: 20px;
     top: 50px;
     z-index: 1;
-    width: 30%;
+    width: 40%;
 }
 
 .texto-section7 {
@@ -370,7 +423,7 @@ section {
     position: relative;
     z-index: 3;
     height: 100%;
-}
+} 
 
 .text1-sect7 {
     padding-top: 4rem;
@@ -408,11 +461,16 @@ section {
 
 /*section 8*/
 .section8 {
-    background: transparent;
+    background: #2B1845;
     position: relative;
     height: 100vh;
 }
 
+.mano-6 {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
 
 .chat-8 {
     position: absolute;
@@ -438,17 +496,17 @@ section {
     align-self: center;
 
 }
+
 .mensajeSec8 {
     width: 60%;
 }
 
-#textoSec8{
+#textoSec8 {
     transform: translateY(-4rem);
 }
 
 /*seccion de preguntas */
 /*seccion 9 */
-
 .sec9{
     background-image: url("../src/ri-caso1-xs-p7-fondo.jpg");
     position: relative;
@@ -522,229 +580,1227 @@ section {
     width: 4rem;
 }
 
-/*prueba*/
-
-  
-  main {
-    overflow-x: hidden;
-    display: flex;
-    position: sticky;
-    top:0;
-  
-  }
-  
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sec10 {
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4ch;
-  }
-
-  .sticky-container{
-    background-image: url("../src/fondo68.svg");
-    background-size: cover;
-    background-position: center;
-  }
-
-
 @media (max-width: 1024px) {
-     /* Section 1 */
-     .section1{
+
+    /* Section 1 */
+    .section1 {
         background-image: url("../src/fondo.png");
+        height: 120vh;
     }
 
     .icon1 {
         width: 50px;
     }
+
     .icon2 {
         width: 70px;
     }
+
     .icon3 {
         width: 80px;
     }
+
     .icon4 {
         width: 70px;
     }
-    .corazon{
+
+    .corazon {
         padding-top: 12rem;
-        
     }
+
+    #pSection1 {
+        font-size: 1.8rem;
+    }
+
     /* Section 2 */
-    .section2{
-        height: 60vh;
+    .section2 {
+        height: 100vh;
     }
+
+    #content {
+        background-image: url('../src/ri-caso1-xs-p2-fondo.png');
+    }
+
     .manos-game {
         width: 100%;
     }
 
     .mision-cumplida {
-        width: 100%;
+        margin-bottom: 45vh;
     }
 
-    #pSection1 {
-        font-size: 1.2rem;
+    .icon1 {
+        width: 110px;
+        left: 13%;
+        top: 10%;
     }
+
+    .icon2 {
+        width: 100px;
+        bottom: 60%;
+        left: 45%;
+    }
+
+    .icon3 {
+        width: 130px;
+        left: 58%;
+        top: 90%;
+    }
+
+    .icon4 {
+        width: 130px;
+        top: 85%;
+        right: 55%;
+    }
+
+    .icon5 {
+        display: block;
+        top: 18%;
+        width: 100px;
+    }
+
     /*section 3*/
-    .section3{
-        height: 70vh;
+    .section3 {
+        height: 100vh;
     }
-    .section4{
-        height: 110vh;
+
+    .chat {
+        margin-top: 5%;
+        width: 85%;
+        height: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 3%;
+        /* background-size: cover; */
+    }
+
+    #message1 {
+        width: 65%;
+    }
+
+    #message2 {
+        width: 60%;
+    }
+
+    #message23 {
+        width: 48%;
+    }
+
+    #pareja-chico {
+        width: 20%;
+        margin-right: 35%;
+    }
+
+    #pareja-chica {
+        margin-left: 35%;
+        width: 23%;
+    }
+
+    .corazones-chico {
+        display: block;
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+        width: 30%;
+    }
+
+    .corazones-chica {
+        display: block;
+        position: absolute;
+        right: 40%;
+        bottom: 6%;
+        width: 15%;
     }
 
     /*section 4*/
-    #sec4H2{
-        margin-top: 2rem;
+    .section4 {
+        height: 100vh;
     }
-    .chatContainer{
-        height: 50%;
-    }
-     /*seccion 6*/
-    .texto-sec6{
-        width: 33%;
-        left: 43.5%;
-    }
-    .mensajeSec{
-        width: 80%;
-    }
-    .mensajeSec6{
+
+    .regalo {
         width: 60%;
     }
+
+    #sec4H2 {
+        margin-top: 7rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        font-size: 3.2rem;
+        font-weight: 350;
+    }
+
+    .caja-texto {
+        width: 65%;
+        font-size: 2rem;
+        font-weight: 630;
+        text-align: left;
+        padding: 2rem 5.6rem 2rem 3.1rem;
+    }
+    /* Section 5 */
+
+    .room1{
+        width: 100%;
+    }
+
+    .room2{
+        width: 100%;
+    }
+    #texto-section5{
+        top: 65%;
+        padding: 2.5rem;
+        font-size: 1.4rem;
+        max-width: 50rem;
+        border-radius: 5%;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    /* Section 6 */
+    .section6{
+        height: 100vh;
+    }
+    .manos-chat{
+        bottom: 0;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .texto-sec6 {
+        margin-top: 12%;
+        width: 50%;
+        left: 23%;
+    }
+
+    .mensajeSec {
+        width: 100%;
+    }
+
+    .mensajeSec6 {
+        width: 70%;
+        left: 10%;
+    }
+
+    /* Section 7 */
+    .texto-section7{
+        font-size: 2.3rem;
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        height: 10%;
+    }
+    .text1-sect7{
+        padding-top: 15%;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+    .text1-sect7B{
+        align-self: normal;
+        padding: 5% 20%;
+    }
+
+    .text1-sect7B p{
+        margin-bottom: 10px;
+    }
+
+    #emojis-7{
+        width: 250px;
+    }
+
+    #emojis-sect7{
+       padding-left: 35%;
+       width: 100%;
+    }
+
+    .mano-cel-izq{
+        padding-top: 100%;
+        margin-left: 8%;
+        height: 100%;
+        width: 45%;
+        
+    }
+    .mano-cel-der{
+        padding-top: 90%;
+        margin-right: 8%;
+        height: 100%;
+        width: 45%;
+    }
+
+    /*Section9*/
+
+    .preguntaH {
+        font-size: 3rem;
+        padding: 0 10rem;
+        text-align: center;
+        
+    }
+    .buttonsDiv{
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .btn9{
+        text-align: left;
+        font-size: 2.5rem;
+        padding: 1.3rem 5rem;
+        border-radius: 40px;
+    }
+    
+    #azul{
+        height: 80%;
+        width: 100%;
+    }
+    #recuadro{
+        width: 90%;
+    }
+    .texto9{
+        max-width: 85%;
+        font-size: 1.8rem;
+    }
+
 }
+
 @media (max-width: 768px) {
+
     /* Section 1 */
-    .icon1 {
-        width: 40px;
-    }
-    .icon2 {
-        width: 50px;
-    }
-    .icon3 {
-        width: 60px;
-    }
-    .icon4 {
-        width: 60px;
+    #pSection1 {
+        width: 45%;
+        font-size: 1.4rem;
     }
 
     /* Section 2 */
-    .section2 {
-        height: 80vh;
+    .icon1 {
+        width: 100px;
+        left: 13%;
+        top: 10%;
     }
+
+    .icon2 {
+        width: 90px;
+        bottom: 60%;
+        left: 45%;
+    }
+
+    .icon3 {
+        width: 120px;
+        left: 58%;
+        top: 90%;
+    }
+
+    .icon4 {
+        width: 120px;
+        top: 85%;
+        right: 55%;
+    }
+
+    .icon5 {
+        display: block;
+        top: 18%;
+        width: 90px;
+    }
+
+    /*seccion 3*/
+    .chatContainer {
+        height: 95%;
+    }
+
+    #message1 {
+        width: 60%;
+    }
+
+    #message2 {
+        width: 55%;
+    }
+
+    #message23 {
+        width: 45%;
+    }
+
+    #pareja-chico {
+        width: 20%;
+        margin-right: 55%;
+    }
+
+    #pareja-chica {
+        margin-left: 55%;
+        width: 24.5%;
+    }
+
+    .corazones-chico {
+        left: 16%;
+        bottom: 13%;
+        width: 25%;
+    }
+
+    .corazones-chica {
+        right: 40%;
+        bottom: 7%;
+        width: 15%;
+    }
+
+    /*Section 4*/
+    .section4 {
+        height: 110vh;
+    }
+
+    .regalo {
+        width: 65%;
+    }
+
+    #sec4H2 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .caja-texto {
+        width: 70%;
+        font-size: 2rem;
+    }
+
+    #texto-section5{
+        padding: 2.5rem;
+        font-size: 1.1rem;
+        max-width: 40rem;
+    }
+
+    .texto-section7{
+        font-size: 1.7rem;
+    }
+
+    /*Section9*/
+    .btn9{
+        font-size: 2.2rem;
+        padding: 1.3rem 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+
+    /* Section 1 */
+    #pSection1 {
+        font-size: 1.1rem;
+        max-width: 45%;
+    }
+
+    /* Section 2 */
+    .manos-game {
+        position: relative;
+    }
+
+    .icon1 {
+        width: 85px;
+        left: 13%;
+        top: 15%;
+    }
+
+    .icon2 {
+        width: 75px;
+        bottom: 54%;
+        left: 45%;
+    }
+
+    .icon3 {
+        left: 58%;
+        top: 95%;
+        width: 90px;
+    }
+
+    .icon4 {
+        width: 90px;
+        top: 90%;
+        right: 55%;
+    }
+
+    .icon5 {
+        width: 75px;
+        top: 25%;
+        right: 13%;
+    }
+
+    /* section3 */
+    #message1 {
+        width: 70%;
+    }
+    #message23 {
+        width: 50%;
+    }
+    
+    #message2 {
+        width: 60%;
+    }
+    #pareja-chico {
+        width: 20%;
+        margin-right: 50%;
+    }
+
+    #pareja-chica {
+        margin-left: 50%;
+        width: 24.5%;
+    }
+
+    .corazones-chico {
+        left: 9%;
+        bottom: 9%;
+        width: 30%;
+    }
+
+    .corazones-chica {
+        right: 40%;
+        bottom: 7%;
+        width: 18%;
+    }
+
+    /*Section 4*/
+    .section4 {
+        height: 105vh;
+    }
+
+    .regalo {
+        width: 70%;
+    }
+
+    #sec4H2 {
+        margin-top: 4rem;
+        font-size: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .caja-texto {
+        width: 75%;
+        font-size: 1.6rem;
+    }
+    .caja-texto {
+        width: 75%;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+    /* Section5 */
+    #texto-section5{
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .texto-section7{
+        font-size: 1.1rem;
+    }
+
+    #emojis-7{
+        width: 150px;
+    }
+
+    #emojis-sect7{
+       padding-left: 25%;
+       width: 100%;
+    }
+
+
+    /*Section9*/
+
+
+    .preguntaH {
+        font-size: 3rem;
+        padding: 0 10rem;
+    }
+    .buttonsDiv{
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .btn9{
+        font-size: 2.2rem;
+        padding: 1.3rem 3rem;
+    }
+
+
+    
+    /*Section9*/
+
+
+    .preguntaH {
+        font-size: 2.5rem;
+        
+    }
+    .btn9{
+        font-size: 1.8rem;
+        padding: 1.3rem 2.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* Section 1 */
     #pSection1 {
         font-size: 1rem;
     }
-    .caja-texto{
-        width: 60%;
+
+    /* Section 2 */
+    .icon1 {
+        width: 65px;
     }
-    #texto-section5{
-        width: 60%;
-        font-size: 1rem;
+
+    .icon2 {
+        width: 60px;
     }
-    /*seccion 3*/
+
+    .icon3 {
+        width: 70px;
+    }
+
+    .icon4 {
+        width: 70px;
+    }
+
+    .icon5 {
+        width: 60px;
+    }
+
+    .corazon {
+        width: 25%;
+    }
+
+    #content {
+        background-size: cover;
+    }
+
+    /* Section3 */
     .chatContainer{
-        height: 70%;
+        height: 85%;
     }
+    #message1{
+        width: 75%;
+    }
+    #message2{
+        width: 65%;
+    }    
+    #message23{
+        width: 50%;
+    }
+    /*Section 4*/
+
+    .regalo {
+        width: 100%;
+
+    }
+
+    #sec4H2 {
+        width: 80%;
+        margin-top: 5rem;
+        font-size: 1.3rem;
+    }
+
+    .caja-texto {
+        width: 100%;
+        font-size: 1rem;
+
+    }
+
+    .containerCelular {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    /* Section5 */
+    #texto-section5{
+        top:50%;
+        padding: 1.1rem;
+        font-size: 0.65rem;
+        max-width: 21rem;
+    }
+
     /*seccion 6*/
     .texto-sec6{
-        width: 32%;
-        left: 43.5%;
+        height: 30%;
+        width: 55%;
+        left: 20%;
+        margin-top: 0;
+        top: 33%;
     }
+
     .mensajeSec{
         width: 80%;
     }
+
     .mensajeSec6{
         width: 60%;
     }
-}
-@media (max-width: 640px) {
-    #pSection1{
-        font-size: 1rem;
-        max-width: 60%;
-    }
-    .caja-texto {
-        width: 80%;
-        font-size: 1rem;
-    }
-    .chat{
-        width: 60%;
-    }
-    #sec4H2{
-        font-size: 1rem;
-    }
-    #texto-section5{
-        width: 80%;
-        font-size: 0.7rem;
-    }
+
+
+    /* Section 7 */
     .texto-section7{
-        font-size: 1rem;
-        width: 80%;
+        font-size: 0.9rem;
     }
+
+    .text1-sect7{
+        padding-left: 15%;
+        padding-right: 15%;
+
+    }
+    .text1-sect7B{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #emojis-7{
+        width: 100px;
+    }
+    .mano-cel-izq{
+        padding-top: 110%;
+        margin-left: 4%;
+
+    }
+    .mano-cel-der{
+        padding-top: 80%;
+        margin-right: 4%;
+
+    }
+
+    #textoSec8 {
+        transform: translateY(-2rem);
+    }
+
+    /* Section 9 */
+
+    .preguntaH {
+        font-size: 1.6rem;
+    }
+    .buttonsDiv{
+        width: 100%;
+        padding: 0 0.6rem;
+    }
+
+    .btn9{
+        font-size: 1.3rem;
+        padding: 1.3rem 2rem;
+    }
+
+
 }
-@media (max-width: 425px) {
+
+
+@media (max-width: 320px) {
+
+    /* Section 1 */
+    #pSection1 {
+        font-size: 0.8rem;
+    }
+
+    /* Section 2 */
+
+    .icon1 {
+        width: 50px;
+    }
+
+    .icon2 {
+        width: 4px;
+    }
+
+    .icon3 {
+        width: 60px;
+    }
+
+    .icon4 {
+        width: 60px;
+
+    }
+
+    .icon5 {
+        width: 50px;
+    }
+
+    .corazon {
+        width: 25%;
+    }
+
+    /*Section 3*/
+
+
+    /* Section 4 */
+    #sec4H2 {
+        margin-top: 4rem;
+        font-size: 1rem;
+    }
+
+    .caja-texto {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+    }
+
+    /* Section5 */
+    #texto-section5{
+        top: 55%;
+        padding: 1.5rem;
+        font-size: 0.7rem;
+        max-width: 18rem;
+    }
+
+}
+
+/* MediaQ altura */
+
+/* "orientation: landscape" para saber si el dispositivo esta volteado */
+@media (max-height: 1024px) and (orientation: landscape) {
+
     /* Section 1 */
     .section1 {
         height: 100vh;
     }
 
-    .icon1 {
-        width: 30px;
-    }
-    .icon2 {
-        width: 40px;
-        left: 2%;
-    }
-    .icon3 {
-        width: 40px;
-    }
-    .icon4 {
-        width: 40px;
-    }
-
-    /* Section 2 */
-    .section2 {
-        height: 70vh;
-    }
-
-    #content {
-        background-image: url('../src/ri-caso1-xs-p2-fondo.jpg');
-        background-size: cover;
+    .corazon {
+        padding-top: 12rem;
+        width: 25%;
     }
 
     #pSection1 {
-        font-size: 0.7rem;
+        font-size: 1.5rem;
+    }
+
+
+    /*Section 2*/
+    .manos-game {
+        width: 80%;
+    }
+
+    .mision-cumplida {
+        margin-bottom: 0;
+    }
+
+    .icon1 {
+        width: 100px;
+        left: 55%;
+    }
+
+    .icon2 {
+        width: 100px;
+    }
+
+    .icon3 {
+        top: 30%;
+        left: 15%;
+        width: 110px;
+    }
+
+    .icon4 {
+        top: 40%;
+        right: 15%;
+        width: 110px;
+    }
+
+    .icon5 {
+        display: none;
+    }
+
+    /* Sectino 3 */
+    .chat {
+        display: grid;
+        background: #005E73 url(../src/patron-bg-chat.svg);
+        width: 40%;
+        height: 100%;
+        z-index: 1;
+        margin: 0%;
+    }
+
+    .chatContainer {
+        width: 100%;
+        height: 90%;
+        align-self: center;
+        display: grid;
+    }
+
+    #message1 {
+        width: 85%;
+    }
+
+    #message2 {
+        width: 80%;
+    }
+
+    #message23 {
+        width: 75%;
+    }
+
+    .corazones-chico {
+        display: none;
+    }
+
+    .corazones-chica {
+        display: none;
+    }
+
+    #pareja-chico {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    #pareja-chica {
+        width: 95%;
+        margin-right: 0%;
+    }
+
+    /* Section 4 */
+    .containerCelular {
+        width: 100%;
+        height: 90%;
+    }
+
+    .regalo {
+        width: 75%;
+    }
+
+    #sec4H2 {
+        margin-top: 19rem;
+        top: 0;
+        width: 70%;
+        font-size: 3rem;
+    }
+
+    .caja-texto {
+        padding: 20px 20px;
+        width: 90%;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2.7rem;
+        top: 70%;
+    }
+
+    /* Section 5 */
+    #texto-section5 {
+        padding: 20px;
+        max-width: 80%;
+        border-radius: 20px;
+        text-align: center;
+        top: 63%;
+        font-size: 1.3rem;
+    }
+
+    /* Section 6 */
+    .texto-sec6{
+        min-width: 19%
+    }
+    .mensajeSec6{
+        width: 75%;
+    }
+    .mensajeSec{
+        width: 90%;
+    }  
+}
+
+@media (max-height: 768px) and (orientation: landscape) {
+
+    /* Section 1 */
+    .corazon {
+        padding-top: 10rem;
+        width: 25%;
+    }
+
+    #pSection1 {
+        font-size: 1.5rem;
+    }
+
+    /*Section 2*/
+    .icon1 {
+        width: 90px;
+        left: 55%;
+    }
+
+    .icon2 {
+        width: 90px;
+        left: 5%;
+    }
+
+    .icon3 {
+        top: 30%;
+        left: 15%;
+        width: 100px;
+    }
+
+    .icon4 {
+        top: 40%;
+        right: 15%;
+        width: 100px;
+    }
+
+    /* section 4 */
+    #sec4H2 {
+        margin-top: 13rem;
+        top: 0;
+        width: 70%;
+        font-size: 3rem;
+    }
+
+    .caja-texto {
+        padding: 10px;
+        width: 90%;
+        margin-bottom: 0rem;
+        font-size: 2.2rem;
+        top: 70%;
+    }
+    
+    /* Section 5 */
+    #texto-section5 {
+        top: 65%;
+        font-size: 1.1rem;
+    }
+
+    /* Section 6 */
+    .texto-sec6{
+        min-width: 16%
+    }
+
+
+}
+
+@media (max-height: 640px) and (orientation: landscape) {
+
+    /* Section 1 */
+    .section1 {
+        height: 100vh;
     }
 
     .corazon {
-        width: 40%;
+        padding-top: 8rem;
+        width: 20%;
     }
-     /*seccion 3*/
-     .chatContainer{
-        height: 60%;
+
+    #pSection1 {
+        font-size: 1.3rem;
     }
-    /*seccion 6*/
+
+    /*Section 2*/
+
+    .icon1 {
+        width: 85px;
+        left: 55%;
+        top: 85%;
+    }
+
+    .icon2 {
+        width: 85px;
+        top: 75%;
+        left: 4%;
+    }
+
+    .icon3 {
+        top: 30%;
+        left: 15%;
+        width: 100px;
+    }
+
+    .icon4 {
+        top: 40%;
+        right: 15%;
+        width: 100px;
+    }
+
+    /*Section 3*/
+
+    /* section 4 */
+    #sec4H2 {
+        margin-top: 10rem;
+        font-size: 2.4rem;
+    }
+
+    .caja-texto {
+        font-size: 1.7rem;
+    }
+
+    /* Section 5 */
+    #texto-section5 {
+        font-size: 0.9rem;
+    }
+
+    /* Section 6 */
     .texto-sec6{
-        width: 30%;
-    }
-    .mensajeSec{
-        width: 80%;
-    }
-    .mensajeSec6{
-        width: 60%;
-    }
-    #textoSec8{
-        transform: translateY(-2rem);
+        left: 47.5%;
     }
 }
 
-/*
 
+@media (max-height: 425px) and (orientation: landscape) {
+
+    /* Section 1 */
+    .section1 {
+        height: 130vh;
+    }
+
+    .corazon {
+        padding-top: 4rem;
+        width: 18%;
+    }
+
+    #pSection1 {
+        font-size: 1rem;
+    }
+
+    /*Section 2*/
+    .section2 {
+        height: 130vh;
+    }
+
+    .manos-game {
+        width: 70%;
+    }
+
+    .icon1 {
+        width: 60px;
+        left: 55%;
+        top: 80%;
+    }
+
+    .icon2 {
+        width: 60px;
+        left: 5%;
+    }
+
+    .icon3 {
+        top: 30%;
+        left: 15%;
+        width: 70px;
+    }
+
+    .icon4 {
+        top: 40%;
+        right: 15%;
+        width: 70px;
+    }
+
+    /*Section 3*/
+
+    #pareja-chico {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    #pareja-chica {
+        width: 95%;
+        margin-right: 0%;
+    }
+
+    /*Section 4*/
+
+    #sec4H2 {
+        margin-top: 6rem;
+        font-size: 2rem;
+    }
+
+    .caja-texto {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    /* Section 5 */
+    #texto-section5 {
+        top: 55%;
+        font-size: 0.7rem;
+    }
+
+    /* Section 6 */
+    .section6{
+        height: 110vh;
+    }
+    .texto-sec6{
+        width: 15%;
+        min-width: 10%
+    }
+}
+
+@media (max-height: 320px) and (orientation: landscape) {
+
+    /* Section 1 */
+    .corazon {
+        width: 17%;
+    }
+
+    #pSection1 {
+        font-size: 0.8rem;
+    }
+
+    .icon1 {
+        width: 50px;
+    }
+
+    .icon2 {
+        width: 50px;
+    }
+
+    .icon3 {
+        width: 60px;
+    }
+
+    .icon4 {
+        width: 60px;
+    }
+
+    /* Section 3 */
+
+    .pareja {
+        width: 100%;
+        position: absolute;
+        object-fit: contain;
+        align-self: flex-end;
+    }
+
+    #pareja-chico {
+        width: 70%;
+        margin-left: 40%;
+    }
+
+    #pareja-chica {
+        width: 80%;
+        margin-right: 40%;
+    }
+
+    /* Section 4 */
+
+    .containerCelular {
+        width: 100%;
+    }
+
+    .regalo {
+        width: 75%;
+    }
+
+    #sec4H2 {
+        margin-top: 1.5rem;
+        top: 0;
+        width: 70%;
+        font-size: 2rem;
+    }
+
+    .caja-texto {
+        padding: 10px 20px;
+        width: 90%;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        font-size: 0.9rem;
+        top: 50%;
+    }
+
+    /*Section 4*/
+    #sec4H2 {
+        margin-top: 4.5rem;
+        font-size: 1.5rem;
+    }
+
+    .caja-texto {
+        font-size: 1rem;
+        margin-top: 55px;
+    }
+
+    /* Section 5 */
+    #texto-section5 {
+        top: 70%;
+        font-size: 0.6rem;
+    }
+
+
+}
+
+/*
 @media (max-width: 1024px) {
     .section1 {
         background-image: url("../src/ri-caso1-xs-p1-fondo.jpg");

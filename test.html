@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/wickedcss.min.css">
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
- 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -17,35 +17,38 @@
 
 <body>
 
+    <div style="position: relative;">
+        <!--seccion 1-->
+        <section class="section1">
 
-    <!--seccion 1-->
-    <section class="section1 vertical-section">
-
-        <img class="corazon" id="corazon" src="./src/corazon-index.png" alt="">
-        <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en línea y
-            desde entonces
-            no han
-            dejado de conectarse! 🎮 Él la agregó como amiga y comenzaron a jugar juntos todos los días. 💫✨</p>
-    </section>
+            <img class="corazon" id="corazon" src="./src/corazon-index.png" alt="">
+            <p class="" id="pSection1"><span>Cami (14 años)</span> y <span>Sebas (19 años)</span> se encontraron en
+                línea y
+                desde entonces
+                no han
+                dejado de conectarse! 🎮 Él la agregó como amiga y comenzaron a jugar juntos todos los días. 💫✨</p>
+        </section>
 
 
-    <!--seccion 2-->
-    <section class="section2 d-flex justify-content-center vertical-section" id="section2">
-        <div id="content"></div>
+        <!--seccion 2-->
+        <section class="section2 d-flex justify-content-center" id="section2">
+            <div id="content"></div>
+            <img class="manos-game" data-aos="fade-up" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
+            <img class="mision-cumplida" data-aos="fade" data-aos-delay="500" id="" src="./src/octupus.svg" alt="">
+            <img class="icon1" src="./src/coin-2.svg" style="">
+            <img class="icon2" src="./src/diamond-2.svg" style="">
+            <img class="icon3" src="./src/star2.svg" style="">
+            <img class="icon4" src="./src/diamond-3.svg" style="">
+            <img class="icon5" src="./src/ri-caso1-xs-p2-moneda2.svg" style="">
 
-        <img class="manos-game" data-aos="fade-up" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
-        <img class="mision-cumplida" data-aos="fade" data-aos-delay="500" id="" src="./src/octupus.svg" alt="">
-        <img class="icon1" src="./src/coin-2.svg" style="">
-        <img class="icon2" src="./src/diamond-2.svg" style="">
-        <img class="icon3" src="./src/star2.svg" style="">
-        <img class="icon4" src="./src/diamond-3.svg" style="">
+        </section>
+    </div>
 
-    </section>
     <!--seccion 3-->
-    <section class="section3 vertical-section">
+    <section class="section3 ">
 
-        <img class="pareja" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000" src="./src/boy.svg"
-            alt="">
+        <img class="pareja" id="pareja-chico" data-aos-duration="1000" data-aos-delay="1000" src="./src/boy.svg" alt="">
+        <img class="corazones-chico" src="./src/ri-caso1-xs-p3-chico-corazones.svg" style="">
         <div class="chat">
             <div class="chatContainer">
                 <img data-aos="fade-right" data-aos-duration="500" data-aos-delay="1500" src="./src/1.2.png" alt=""
@@ -59,27 +62,29 @@
             </div>
 
         </div>
-        <img class="pareja" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2000" src="./src/girl.svg"
-            alt="">
+        <img class="pareja" id="pareja-chica" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2000"
+            src="./src/girl.svg" alt="">
+        <img class="corazones-chica" src="./src/ri-caso1-xs-p3-chica-corazones.svg" style="">
+
     </section>
+
     <!--seccion 4-->
-    <section class="section4 vertical-section">
+    <section class="section4">
         <div class="containerCelular">
             <h2 id="sec4H2">¡Has recibido un regalo!</h2>
-            <img class="regalo" src="./src/c1-p4-celular.svg" alt="">
+            <img id="regalo" class="regalo" src="./src/c1-p4-celular.svg" alt="">
             <div data-aos="zoom-out" data-aos-duration="1000" class="caja-texto">
                 <p>¡Sebas sorprendió a Cami dentro del juego con el regalo que siempre soñó: ¡gemas doradas! 💎✨ Ella
                     siempre había deseado tenerlas, pero no tenía dinero para comprarlas. 🤩</p>
             </div>
         </div>
-
-
     </section>
-    <!--seccion 5 -->
-    <section class="seccion5 vertical-section">
 
-        <img src="./src/fondo-cuarto1.svg" class="room1">
-        <img src="./src/fondo-cuarto2.svg" class="room2 lax lax_preset_fadeInOut:500:0">
+    <!--seccion 5 -->
+    <section class="section5" id="seccion5-historia1">
+
+        <img id="room1" src="./src/fondo-cuarto1.svg" class="room1">
+        <img id="room2" src="./src/fondo-cuarto2.svg" class="room2 lax lax_preset_fadeInOut:500:0">
 
         <div id="texto-section5" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="1000"
             class="lax lax_preset_scaleIn:700:0">
@@ -89,55 +94,52 @@
             </p>
         </div>
     </section>
-    <!-- Cierre seccion 5 -->
 
-    <div class="sticky-container">
-        <main>
-            
-                <section class="section6 sec10">
-                    <div class="sec6Cel">
-                        <img class="manos-chat" class="mano-6" src="./src/2.gif" alt="">
+    <!-- secciones 6-8 -->
+    <div class="containerDiv" style="width: 100%;">
+        <div class="container">
+
+
+            <div class="content">
+                <img class="img" id="mano" src="./src/2.gif" alt="">
+            </div>
+    
+            <section class="container" id="mano1" style="display: grid;">
+                <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
+                <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
+                <div class="texto-section7">
+                    <div class="text1-sect7"> 
+                        <p class="">Cami y Sebas tenían una
+                            relación a distancia. Sebas constantemente le pedía fotos</p>
+                        <img src="./src/emojis-7.svg" alt="" id="emojis-7">
                     </div>
-            
-                </section>
-         
-                <section class="section7 sec10">
-                    <img class="mano-cel-izq" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
-                        src="./src/7-mano-izq.svg" alt="">
-                    <img class="mano-cel-der" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500"
-                        src="./src/7-mano-der.svg" alt="">
-                    <div class="texto-section7">
-                        <div class="text1-sect7" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="1000">
-                            <p class="">Cami y Sebas tenían una
-                                relación a distancia. Sebas constantemente le pedía fotos</p>
-                            <img src="./src/emojis-7.svg" alt="" id="emojis-7">
+                    <div class="text1-sect7B">
+                        <p class="">Cada vez que discutían por
+                            las fotos, Sebas le dejaba de hablar por varios días y tampoco le
+                            enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.
+                        </p>
+                        <div id="emojis-sect7">
+                            <img src="./src/7-flags.svg" alt="" id="emoji-7">
+                            <img src="./src/7-emoji.svg" alt="" id="emoji-7">
                         </div>
-                        <div class="text1-sect7B" data-aos="zoom-out" data-aos-duration="400" data-aos-delay="100">
-                            <p class="">Cada vez que discutían por
-                                las fotos, Sebas le dejaba de hablar por varios días y tampoco le
-                                enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.
-                            </p>
-                            <div id="emojis-sect7">
-                                <img src="./src/7-flags.svg" alt="" id="emoji-7">
-                                <img src="./src/7-emoji.svg" alt="" id="emoji-7">
-                            </div>
-                        </div>
-            
                     </div>
-                </section>
-
-                <section class="section6 sec10">
-                    <div class="sec6Cel">
-                        <img class="manos-chat" src="./src/1.gif" alt="">
-                    </div>
-                </section>
-
-        </main>
+    
+                </div>
+            </section>
+    
+            <div class="content">
+                <div style="width: 100%;">
+                    <img class="img" id="mano2" src="./src/1.gif" alt="" >
+    
+                </div>
+            </div>
+        </div>
     </div>
+   
 
-    <!--seccion de preguntas -->
+    <!--*****seccion de preguntas*****-->
     <!--seccion 9 -->
-    <section class="sec9 vertical-section" >
+    <section class="sec9 vertical-section">
         <h1 class="preguntaH">¿Qué le recomendarías a Cami?</h1>
         <div class="buttonsDiv" id="pregunta">
             <button class="btn9" onclick="mostrarRespuesta('azul')">¡Ojo! Sebas es mayor, y te está
@@ -184,8 +186,6 @@
         </div>
     </section>
 
-   
-    
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -193,8 +193,47 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 
+
+    <script>
+        window.addEventListener('scroll', function () {
+
+            var mano = document.getElementById('mano');
+            var mano1 = document.getElementById('mano1');
+            var mano2 = document.getElementById('mano2');
+            var posicion = mano.getBoundingClientRect(mano).top;
+            var posicion1 = mano1.getBoundingClientRect(mano1).top;
+            // Obtener la posición del elemento respecto a la ventana
+            var alturaVentana = window.innerHeight;
+
+            // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
+            if (posicion <= alturaVentana - 600) {
+                mano.classList.add('fadeOut');
+                setTimeout(() => {
+                    mano1.style.display = "grid";
+                    mano1.classList.add('fadeIn');
+
+                }, 500);
+            } else {
+                mano.classList.remove('fadeOut');
+            }
+
+            if (posicion1 <= alturaVentana - 800) {
+                mano1.classList.add('fadeOut');
+                setTimeout(() => {
+                    mano2.style.visibility = "visible;"
+                    mano2.classList.add('fadeIn');
+
+                }, 1000);
+            } else {
+                mano1.classList.remove('fadeOut');
+                mano2.style.visibility = "hidden";
+                mano2.classList.remove('fadeIn');
+
+            }
+        });
+    </script>
 
     <script>
         function mostrarRespuesta(color) {
@@ -234,8 +273,12 @@
                     ]
                 }
             })
-        }
-    </script>
+            // Cambiar la imagen para otros dispositivos     
+            cambiarImagen();
+            // Agrega los event listeners para los eventos de redimensionamiento y cambio de orientación
+            window.addEventListener('resize', cambiarImagen);
+            window.addEventListener('orientationchange', cambiarImagen);
+        };
 
     </script>
     <script>
@@ -254,10 +297,15 @@
                 // Condición para verificar si el section está en la vista
                 if (sectionTop <= window.innerHeight + 50) {
                     content.style.transition = 'background-image 2s ease-out, opacity 0.5s ease-in-out';
-                    // content.style.backgroundImage = "url('./src/bg-2.svg')";
-                    setTimeout(() => {
-                        imagen.src = "./src/manos-img.svg";
+                    // // content.style.backgroundImage = "url('./src/bg-2.svg')";
 
+                    setTimeout(() => {
+                        imagen.src = '../src/c1-p2-manos.svg';
+                        if (document.documentElement.clientWidth < 1024) {
+                            if (window.matchMedia("(orientation: portrait)").matches) {
+                                imagen.src = '../src/xs-p2-manos_cel.svg';
+                            }
+                        }
                     }, 1500);
 
                     content.style.opacity = 1;
@@ -265,11 +313,7 @@
             });
 
         });
-
     </script>
-
-
-
 
 </body>
 
