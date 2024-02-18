@@ -104,13 +104,13 @@
             <img class="img" id="mano" src="./src/2.gif" alt="">
         </div>
 
-        <div class="contenttexto" id="mano1">
+        <div class="contenttexto" id="mano1" style="display: none;">
             <div id="mano-cel-izquierda">
                 <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
             </div>
 
 
-            <div class="texto-section7">
+            <div class="texto-section7" >
                 <div class="text1-sect7">
                     <p class="">Cami y Sebas tenían una
                         relación a distancia. Sebas constantemente le pedía fotos</p>
@@ -137,7 +137,7 @@
 
         <div class="content">
 
-            <img class="img" id="mano2" src="./src/1.gif" alt="">
+            <img class="img" id="mano2" src="./src/1.gif" alt="" style="visibility: hidden;">
 
 
         </div>
@@ -204,7 +204,7 @@
         </script>
 
 
-    <!--<script>
+    <script>
         window.addEventListener('scroll', function () {
 
             var mano = document.getElementById('mano');
@@ -216,24 +216,26 @@
             var alturaVentana = window.innerHeight;
 
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
-            if (posicion <= alturaVentana - 600) {
+            if (posicion <= alturaVentana - 860) {
                 mano.classList.add('fadeOut');
                 setTimeout(() => {
-                    mano1.style.display = "grid";
+                    mano1.style.display = "flex";
                     mano1.classList.add('fadeIn');
 
-                }, 500);
+                }, 800);
             } else {
                 mano.classList.remove('fadeOut');
+                mano1.style.display = "none";
+                mano2.style.visibility = "hidden";
             }
 
-            if (posicion1 <= alturaVentana - 800) {
+            if (posicion1 <= alturaVentana - 980) {
                 mano1.classList.add('fadeOut');
                 setTimeout(() => {
                     mano2.style.visibility = "visible;"
                     mano2.classList.add('fadeIn');
 
-                }, 1000);
+                }, 1500);
             } else {
                 mano1.classList.remove('fadeOut');
                 mano2.style.visibility = "hidden";
@@ -242,7 +244,7 @@
             }
         });
     </script>
--->
+
     <script>
         function mostrarRespuesta(color) {
             var respuestaTexto = document.getElementById("textoRespuesta");
