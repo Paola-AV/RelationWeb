@@ -96,46 +96,54 @@
     </section>
 
     <!-- secciones 6-8 -->
-    <div class="containerDiv" style="width: 100%;">
-        <div class="container">
 
+    <div class="container6">
 
-            <div class="content">
-                <img class="img" id="mano" src="./src/2.gif" alt="">
-            </div>
-    
-            <section class="container" id="mano1" style="display: grid;">
+        <div class="background"></div>
+        <div class="content">
+            <img class="img" id="mano" src="./src/2.gif" alt="">
+        </div>
+
+        <div class="contenttexto" id="mano1">
+            <div id="mano-cel-izquierda">
                 <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
-                <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
-                <div class="texto-section7">
-                    <div class="text1-sect7"> 
-                        <p class="">Cami y Sebas tenían una
-                            relación a distancia. Sebas constantemente le pedía fotos</p>
-                        <img src="./src/emojis-7.svg" alt="" id="emojis-7">
-                    </div>
-                    <div class="text1-sect7B">
-                        <p class="">Cada vez que discutían por
-                            las fotos, Sebas le dejaba de hablar por varios días y tampoco le
-                            enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.
-                        </p>
-                        <div id="emojis-sect7">
-                            <img src="./src/7-flags.svg" alt="" id="emoji-7">
-                            <img src="./src/7-emoji.svg" alt="" id="emoji-7">
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-    
-            <div class="content">
-                <div style="width: 100%;">
-                    <img class="img" id="mano2" src="./src/1.gif" alt="" >
-    
-                </div>
             </div>
+
+
+            <div class="texto-section7">
+                <div class="text1-sect7">
+                    <p class="">Cami y Sebas tenían una
+                        relación a distancia. Sebas constantemente le pedía fotos</p>
+                    <img src="./src/emojis-7.svg" alt="" id="emojis-7">
+                </div>
+                <div class="text1-sect7B">
+                    <p class="">Cada vez que discutían por
+                        las fotos, Sebas le dejaba de hablar por varios días y tampoco le
+                        enviaba regalos en el juego.<br>Al final, Cami accedió... Aunque no se sentía cómoda.
+                    </p>
+                    <div id="emojis-sect7">
+                        <img src="./src/7-flags.svg" alt="" id="emoji-7">
+                        <img src="./src/7-emoji.svg" alt="" id="emoji-7">
+                    </div>
+                </div>
+
+            </div>
+            <div id="mano-cel-derecha">
+                <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
+            </div>
+
+
+        </div>
+
+        <div class="content">
+
+            <img class="img" id="mano2" src="./src/1.gif" alt="">
+
+
         </div>
     </div>
-   
+
+
 
     <!--*****seccion de preguntas*****-->
     <!--seccion 9 -->
@@ -196,7 +204,7 @@
         </script>
 
 
-    <script>
+    <!--<script>
         window.addEventListener('scroll', function () {
 
             var mano = document.getElementById('mano');
@@ -234,7 +242,7 @@
             }
         });
     </script>
-
+-->
     <script>
         function mostrarRespuesta(color) {
             var respuestaTexto = document.getElementById("textoRespuesta");
@@ -307,7 +315,7 @@
                             }
                         }
                     }, 1500);
- 
+
                     content.style.opacity = 1;
                 }
             });

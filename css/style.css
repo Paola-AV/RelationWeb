@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +20,7 @@ section {
     background-image: url("../src/fondo.png");
     background-position: center;
     background-size: 100% 100%;
-    z-index: -10;
+    z-index: 10;
     position: sticky;
     top: 0;
 }
@@ -45,7 +44,7 @@ section {
 .section2 {
     position: relative;
     opacity: 1;
-    z-index: 2;
+    z-index: 11;
     height: 110vh;
     transition: background-image 4s ease-out, opacity 0 ease-out;
     background-size: 100% 100%;
@@ -116,6 +115,7 @@ section {
     align-self: flex-end;
     /*transform: translateY(80rem);*/
     transition-duration: 0.5s;
+    z-index: 11;
 }
 
 .mision-cumplida {
@@ -133,7 +133,7 @@ section {
     position: relative;
     overflow: hidden;
     height: 110vh;
-    
+
 }
 
 .pareja {
@@ -298,13 +298,15 @@ section {
 }
 
 /*container de secciones 6-8*/
-.container {
+.container6 {
     position: relative;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
-    background: url('../src/fondo68.svg') center/cover no-repeat;    
+    display: grid;
+
+
 
 }
 
@@ -318,12 +320,46 @@ section {
     z-index: -1;
 }
 
-.content{
+.content {
     display: grid;
+    justify-content: center;
+    height: 100vh;
+
+    padding: 10rem;
+    padding-bottom: 0;
+
 }
 
-.img{
+.img {
     width: 80%;
+    justify-self: center;
+}
+
+.containerDiv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#mano-cel-derecha {
+    height: auto;
+    width: 100%;
+}
+
+.contenttexto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+#mano-cel-izquierda {
+    height: auto;
+    width: 100%;
+    display: grid;
+    justify-content: end;
 }
 
 /*section 6*/
@@ -397,38 +433,40 @@ section {
 
 .mano-cel-izq {
     height: 100%;
-    position: absolute;
     left: 20px;
     bottom: 50px;
     z-index: 2;
-    width: 40%;
+    width: 100%;
 }
 
 .mano-cel-der {
+
+
     height: 100%;
-    position: absolute;
-    right: 20px;
-    top: 50px;
-    z-index: 1;
-    width: 40%;
+    left: 20px;
+    bottom: 50px;
+    z-index: 2;
+    width: 100%;
+
+
 }
 
 .texto-section7 {
-    display: grid;
-    grid-column: 1;
-    grid-row: inherit;
+
+
     font-size: 1.2rem;
-    width: 400px;
+    width: 80%;
     color: white;
     position: relative;
     z-index: 3;
     height: 100%;
-} 
+}
 
 .text1-sect7 {
     padding-top: 4rem;
     width: 100%;
     height: 50%;
+
 }
 
 .text1-sect7B {
@@ -438,6 +476,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: end;
+
 }
 
 #emojis-sect7 {
@@ -507,7 +546,7 @@ section {
 
 /*seccion de preguntas */
 /*seccion 9 */
-.sec9{
+.sec9 {
     background-image: url("../src/ri-caso1-xs-p7-fondo.jpg");
     position: relative;
     display: flex;
@@ -516,19 +555,19 @@ section {
     align-items: center;
 }
 
-.preguntaH{
+.preguntaH {
     color: #FFF;
     font-size: 4rem;
 }
 
-.buttonsDiv{
+.buttonsDiv {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
 }
 
-.btn9{
+.btn9 {
     border-style: solid;
     border-width: 3px;
     border-color: #FFF;
@@ -540,21 +579,21 @@ section {
     font-size: 1.5rem;
 }
 
-#azul{
+#azul {
     width: 80%;
 }
 
-#rojo{
+#rojo {
     width: 80%;
 }
 
-#recuadro{
+#recuadro {
     width: 40%;
     justify-self: center;
     align-self: center;
 }
 
-.texto9{
+.texto9 {
     position: absolute;
     max-width: 32%;
     justify-self: center;
@@ -565,18 +604,21 @@ section {
     padding: 1rem;
 }
 
-#icon19{
+#icon19 {
     width: 4rem;
 }
-.subTexto9{
+
+.subTexto9 {
     display: flex;
     flex-direction: row;
 }
-#icon29{
+
+#icon29 {
     width: 2rem;
     justify-self: center;
 }
-#icon39{
+
+#icon39 {
     width: 4rem;
 }
 
@@ -736,16 +778,18 @@ section {
         text-align: left;
         padding: 2rem 5.6rem 2rem 3.1rem;
     }
+
     /* Section 5 */
 
-    .room1{
+    .room1 {
         width: 100%;
     }
 
-    .room2{
+    .room2 {
         width: 100%;
     }
-    #texto-section5{
+
+    #texto-section5 {
         top: 65%;
         padding: 2.5rem;
         font-size: 1.4rem;
@@ -756,10 +800,11 @@ section {
     }
 
     /* Section 6 */
-    .section6{
+    .section6 {
         height: 100vh;
     }
-    .manos-chat{
+
+    .manos-chat {
         bottom: 0;
         height: 90vh;
         width: 100vw;
@@ -781,45 +826,48 @@ section {
     }
 
     /* Section 7 */
-    .texto-section7{
+    .texto-section7 {
         font-size: 2.3rem;
         text-align: center;
         width: 100%;
         font-weight: 500;
         height: 10%;
     }
-    .text1-sect7{
+
+    .text1-sect7 {
         padding-top: 15%;
         padding-left: 20%;
         padding-right: 20%;
 
     }
-    .text1-sect7B{
+
+    .text1-sect7B {
         align-self: normal;
         padding: 5% 20%;
     }
 
-    .text1-sect7B p{
+    .text1-sect7B p {
         margin-bottom: 10px;
     }
 
-    #emojis-7{
+    #emojis-7 {
         width: 250px;
     }
 
-    #emojis-sect7{
-       padding-left: 35%;
-       width: 100%;
+    #emojis-sect7 {
+        padding-left: 35%;
+        width: 100%;
     }
 
-    .mano-cel-izq{
+    .mano-cel-izq {
         padding-top: 100%;
         margin-left: 8%;
         height: 100%;
         width: 45%;
-        
+
     }
-    .mano-cel-der{
+
+    .mano-cel-der {
         padding-top: 90%;
         margin-right: 8%;
         height: 100%;
@@ -832,28 +880,31 @@ section {
         font-size: 3rem;
         padding: 0 10rem;
         text-align: center;
-        
+
     }
-    .buttonsDiv{
+
+    .buttonsDiv {
         width: 100%;
         padding: 0 3rem;
     }
 
-    .btn9{
+    .btn9 {
         text-align: left;
         font-size: 2.5rem;
         padding: 1.3rem 5rem;
         border-radius: 40px;
     }
-    
-    #azul{
+
+    #azul {
         height: 80%;
         width: 100%;
     }
-    #recuadro{
+
+    #recuadro {
         width: 90%;
     }
-    .texto9{
+
+    .texto9 {
         max-width: 85%;
         font-size: 1.8rem;
     }
@@ -957,18 +1008,18 @@ section {
         font-size: 2rem;
     }
 
-    #texto-section5{
+    #texto-section5 {
         padding: 2.5rem;
         font-size: 1.1rem;
         max-width: 40rem;
     }
 
-    .texto-section7{
+    .texto-section7 {
         font-size: 1.7rem;
     }
 
     /*Section9*/
-    .btn9{
+    .btn9 {
         font-size: 2.2rem;
         padding: 1.3rem 3rem;
     }
@@ -1021,13 +1072,15 @@ section {
     #message1 {
         width: 70%;
     }
+
     #message23 {
         width: 50%;
     }
-    
+
     #message2 {
         width: 60%;
     }
+
     #pareja-chico {
         width: 20%;
         margin-right: 50%;
@@ -1070,6 +1123,7 @@ section {
         width: 75%;
         font-size: 1.6rem;
     }
+
     .caja-texto {
         width: 75%;
         font-size: 1.2rem;
@@ -1077,23 +1131,24 @@ section {
         padding-left: 2rem;
         padding-right: 3rem;
     }
+
     /* Section5 */
-    #texto-section5{
+    #texto-section5 {
         padding: 2rem;
         font-size: 1rem;
     }
 
-    .texto-section7{
+    .texto-section7 {
         font-size: 1.1rem;
     }
 
-    #emojis-7{
+    #emojis-7 {
         width: 150px;
     }
 
-    #emojis-sect7{
-       padding-left: 25%;
-       width: 100%;
+    #emojis-sect7 {
+        padding-left: 25%;
+        width: 100%;
     }
 
 
@@ -1104,26 +1159,28 @@ section {
         font-size: 3rem;
         padding: 0 10rem;
     }
-    .buttonsDiv{
+
+    .buttonsDiv {
         width: 100%;
         padding: 0 3rem;
     }
 
-    .btn9{
+    .btn9 {
         font-size: 2.2rem;
         padding: 1.3rem 3rem;
     }
 
 
-    
+
     /*Section9*/
 
 
     .preguntaH {
         font-size: 2.5rem;
-        
+
     }
-    .btn9{
+
+    .btn9 {
         font-size: 1.8rem;
         padding: 1.3rem 2.5rem;
     }
@@ -1166,18 +1223,22 @@ section {
     }
 
     /* Section3 */
-    .chatContainer{
+    .chatContainer {
         height: 85%;
     }
-    #message1{
+
+    #message1 {
         width: 75%;
     }
-    #message2{
+
+    #message2 {
         width: 65%;
-    }    
-    #message23{
+    }
+
+    #message23 {
         width: 50%;
     }
+
     /*Section 4*/
 
     .regalo {
@@ -1203,15 +1264,15 @@ section {
     }
 
     /* Section5 */
-    #texto-section5{
-        top:50%;
+    #texto-section5 {
+        top: 50%;
         padding: 1.1rem;
         font-size: 0.65rem;
         max-width: 21rem;
     }
 
     /*seccion 6*/
-    .texto-sec6{
+    .texto-sec6 {
         height: 30%;
         width: 55%;
         left: 20%;
@@ -1219,38 +1280,42 @@ section {
         top: 33%;
     }
 
-    .mensajeSec{
+    .mensajeSec {
         width: 80%;
     }
 
-    .mensajeSec6{
+    .mensajeSec6 {
         width: 60%;
     }
 
 
     /* Section 7 */
-    .texto-section7{
+    .texto-section7 {
         font-size: 0.9rem;
     }
 
-    .text1-sect7{
+    .text1-sect7 {
         padding-left: 15%;
         padding-right: 15%;
 
     }
-    .text1-sect7B{
+
+    .text1-sect7B {
         padding-left: 10%;
         padding-right: 10%;
     }
-    #emojis-7{
+
+    #emojis-7 {
         width: 100px;
     }
-    .mano-cel-izq{
+
+    .mano-cel-izq {
         padding-top: 110%;
         margin-left: 4%;
 
     }
-    .mano-cel-der{
+
+    .mano-cel-der {
         padding-top: 80%;
         margin-right: 4%;
 
@@ -1265,12 +1330,13 @@ section {
     .preguntaH {
         font-size: 1.6rem;
     }
-    .buttonsDiv{
+
+    .buttonsDiv {
         width: 100%;
         padding: 0 0.6rem;
     }
 
-    .btn9{
+    .btn9 {
         font-size: 1.3rem;
         padding: 1.3rem 2rem;
     }
@@ -1331,7 +1397,7 @@ section {
     }
 
     /* Section5 */
-    #texto-section5{
+    #texto-section5 {
         top: 55%;
         padding: 1.5rem;
         font-size: 0.7rem;
@@ -1478,15 +1544,17 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         min-width: 19%
     }
-    .mensajeSec6{
+
+    .mensajeSec6 {
         width: 75%;
     }
-    .mensajeSec{
+
+    .mensajeSec {
         width: 90%;
-    }  
+    }
 }
 
 @media (max-height: 768px) and (orientation: landscape) {
@@ -1539,7 +1607,7 @@ section {
         font-size: 2.2rem;
         top: 70%;
     }
-    
+
     /* Section 5 */
     #texto-section5 {
         top: 65%;
@@ -1547,7 +1615,7 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         min-width: 16%
     }
 
@@ -1614,7 +1682,7 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         left: 47.5%;
     }
 }
@@ -1699,10 +1767,11 @@ section {
     }
 
     /* Section 6 */
-    .section6{
+    .section6 {
         height: 110vh;
     }
-    .texto-sec6{
+
+    .texto-sec6 {
         width: 15%;
         min-width: 10%
     }
