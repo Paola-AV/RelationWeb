@@ -34,12 +34,12 @@
         <section class="section2 d-flex justify-content-center" id="section2">
             <div id="content"></div>
             <img class="manos-game" data-aos="fade-up" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
-            <img class="mision-cumplida" data-aos="fade" data-aos-delay="500" id="" src="./src/octupus.svg" alt="">
-            <img class="icon1" src="./src/coin-2.svg" style="">
-            <img class="icon2" src="./src/diamond-2.svg" style="">
-            <img class="icon3" src="./src/star2.svg" style="">
-            <img class="icon4" src="./src/diamond-3.svg" style="">
-            <img class="icon5" src="./src/ri-caso1-xs-p2-moneda2.svg" style="">
+            <img class="mision-cumplida wiggle" data-aos="fade" data-aos-delay="500" id="pulpo" src="./src/octupus.svg" alt="">
+            <img class="icon1 wiggle" src="./src/coin-2.svg" style="">
+            <img class="icon2 wiggle" src="./src/diamond-2.svg" style="">
+            <img class="icon3 wiggle" src="./src/star2.svg" style="">
+            <img class="icon4 wiggle" src="./src/diamond-3.svg" style="">
+            <img class="icon5 wiggle" src="./src/ri-caso1-xs-p2-moneda2.svg" style="">
 
         </section>
     </div>
@@ -100,7 +100,7 @@
     <div class="container6">
 
         <div class="background"></div>
-        <div class="content">
+        <div class="content content6">
             <img class="img" id="mano" src="./src/2.gif" alt="">
         </div>
 
@@ -135,7 +135,7 @@
 
         </div>
 
-        <div class="content">
+        <div class="content content6">
 
             <img class="img" id="mano2" src="./src/1.gif" alt="" style="visibility: hidden;">
 
@@ -215,6 +215,8 @@
             // Obtener la posición del elemento respecto a la ventana
             var alturaVentana = window.innerHeight;
 
+            
+
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
             if (posicion <= alturaVentana - 860) {
                 mano.classList.add('fadeOut');
@@ -223,7 +225,8 @@
                     mano1.classList.add('fadeIn');
 
                 }, 800);
-            } else {
+            }
+             else {
                 mano.classList.remove('fadeOut');
                 mano1.style.display = "none";
                 mano2.style.visibility = "hidden";
@@ -236,7 +239,8 @@
                     mano2.classList.add('fadeIn');
 
                 }, 1500);
-            } else {
+            }
+             else {
                 mano1.classList.remove('fadeOut');
                 mano2.style.visibility = "hidden";
                 mano2.classList.remove('fadeIn');
@@ -311,7 +315,7 @@
 
                     setTimeout(() => {
                         imagen.src = '../src/c1-p2-manos.svg';
-                        if (document.documentElement.clientWidth < 1024) {
+                        if (document.documentElement.clientWidth < 1025) {
                             if (window.matchMedia("(orientation: portrait)").matches) {
                                 imagen.src = '../src/xs-p2-manos_cel.svg';
                             }

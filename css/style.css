@@ -122,6 +122,7 @@ section {
     position: absolute;
     align-self: flex-end;
     width: 80%;
+    z-index: 100;
 }
 
 /*section 3*/
@@ -218,7 +219,7 @@ section {
     z-index: 1;
     background-color: white;
     padding: 20px;
-    width: 50%;
+    width: 45%;
     border-radius: 20px;
     text-align: center;
     align-self: center;
@@ -247,7 +248,7 @@ section {
 #seccion5-historia1 {
     width: 100%;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     left: 0;
     background: #2B2547;
     display: grid;
@@ -553,6 +554,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 110vh;
 }
 
 .preguntaH {
@@ -622,7 +624,9 @@ section {
     width: 4rem;
 }
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1024px) and (orientation: portrait){
 
     /* Section 1 */
     .section1 {
@@ -669,6 +673,7 @@ section {
 
     .mision-cumplida {
         margin-bottom: 45vh;
+        
     }
 
     .icon1 {
@@ -778,18 +783,16 @@ section {
         text-align: left;
         padding: 2rem 5.6rem 2rem 3.1rem;
     }
-
     /* Section 5 */
 
-    .room1 {
+    .room1{
         width: 100%;
     }
 
-    .room2 {
+    .room2{
         width: 100%;
     }
-
-    #texto-section5 {
+    #texto-section5{
         top: 65%;
         padding: 2.5rem;
         font-size: 1.4rem;
@@ -800,11 +803,10 @@ section {
     }
 
     /* Section 6 */
-    .section6 {
+    .section6{
         height: 100vh;
     }
-
-    .manos-chat {
+    .manos-chat{
         bottom: 0;
         height: 90vh;
         width: 100vw;
@@ -826,92 +828,127 @@ section {
     }
 
     /* Section 7 */
-    .texto-section7 {
+    .texto-section7{
         font-size: 2.3rem;
         text-align: center;
         width: 100%;
         font-weight: 500;
         height: 10%;
+        margin: 0 10%;
     }
-
-    .text1-sect7 {
+    .text1-sect7{
         padding-top: 15%;
-        padding-left: 20%;
-        padding-right: 20%;
-
     }
-
-    .text1-sect7B {
+    .text1-sect7B{
         align-self: normal;
-        padding: 5% 20%;
+        padding-top: 60%;
     }
 
-    .text1-sect7B p {
+    .text1-sect7B p{
         margin-bottom: 10px;
     }
 
-    #emojis-7 {
+    #emojis-7{
         width: 250px;
-    }
+    } 
 
-    #emojis-sect7 {
-        padding-left: 35%;
-        width: 100%;
-    }
+     #emojis-sect7{
+       padding-left: 35%;
+       width: 100%;
+    } 
 
-    .mano-cel-izq {
+    .mano-cel-izq{
         padding-top: 100%;
         margin-left: 8%;
         height: 100%;
-        width: 45%;
+        width: 80%;
 
-    }
-
-    .mano-cel-der {
+    } 
+    .mano-cel-der{
         padding-top: 90%;
         margin-right: 8%;
         height: 100%;
-        width: 45%;
+        width: 80%;
+
+    } 
+    .texto-section7{
+        font-size: 2.8rem;
+    }
+    #mano-cel-izquierda{
+        display: block;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        z-index: 1;
+        width: 50%;
+    }
+    
+    #mano-cel-derecha{
+        position: absolute;
+        left: 45%;
+        top: 52%;
+        z-index: 0;
+        width: 50%;
+    }
+
+    #mano,#mano2{
+        padding: 30% 0 0 0;
+        width: 90%;
+        height: 80%;
+    }
+    .content6{
+        padding: 0;
     }
 
     /*Section9*/
 
+    .sec9 {
+        background-image: url("../src/ri-caso1-xs-p7-fondo.jpg");
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
     .preguntaH {
         font-size: 3rem;
-        padding: 0 10rem;
+        margin: 0 10rem;
         text-align: center;
 
     }
-
-    .buttonsDiv {
+    .buttonsDiv{
         width: 100%;
         padding: 0 3rem;
     }
 
-    .btn9 {
+    .btn9{
         text-align: left;
         font-size: 2.5rem;
         padding: 1.3rem 5rem;
         border-radius: 40px;
     }
 
-    #azul {
-        height: 80%;
+    #azul{
         width: 100%;
     }
-
-    #recuadro {
+    #recuadro{
         width: 90%;
     }
-
-    .texto9 {
+    .texto9{
         max-width: 85%;
         font-size: 1.8rem;
     }
 
+    #rojo{
+        width: 100%;
+    }
+
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait){
 
     /* Section 1 */
     #pSection1 {
@@ -1008,24 +1045,35 @@ section {
         font-size: 2rem;
     }
 
-    #texto-section5 {
+    #texto-section5{
         padding: 2.5rem;
         font-size: 1.1rem;
         max-width: 40rem;
     }
 
-    .texto-section7 {
+    .texto-section7{
         font-size: 1.7rem;
     }
 
+    /*Section 6*/
+    #mano{
+        margin-top: 10rem;
+    }
+
     /*Section9*/
-    .btn9 {
+    .sec9{
+        height: 130vh;
+    }
+    .btn9{
         font-size: 2.2rem;
         padding: 1.3rem 3rem;
     }
+    .texto9{
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px) and (orientation: portrait){
 
     /* Section 1 */
     #pSection1 {
@@ -1034,6 +1082,9 @@ section {
     }
 
     /* Section 2 */
+    #pulpo{
+        margin-bottom: 30vh;
+    }
     .manos-game {
         position: relative;
     }
@@ -1072,7 +1123,6 @@ section {
     #message1 {
         width: 70%;
     }
-
     #message23 {
         width: 50%;
     }
@@ -1080,7 +1130,6 @@ section {
     #message2 {
         width: 60%;
     }
-
     #pareja-chico {
         width: 20%;
         margin-right: 50%;
@@ -1123,7 +1172,6 @@ section {
         width: 75%;
         font-size: 1.6rem;
     }
-
     .caja-texto {
         width: 75%;
         font-size: 1.2rem;
@@ -1131,62 +1179,40 @@ section {
         padding-left: 2rem;
         padding-right: 3rem;
     }
-
     /* Section5 */
-    #texto-section5 {
+    #texto-section5{
         padding: 2rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
-    .texto-section7 {
+    .texto-section7{
         font-size: 1.1rem;
     }
 
-    #emojis-7 {
+    #emojis-7{
         width: 150px;
     }
 
-    #emojis-sect7 {
-        padding-left: 25%;
-        width: 100%;
+    #emojis-sect7{
+       padding-left: 25%;
+       width: 100%;
     }
-
 
     /*Section9*/
-
-
-    .preguntaH {
-        font-size: 3rem;
-        padding: 0 10rem;
-    }
-
-    .buttonsDiv {
-        width: 100%;
-        padding: 0 3rem;
-    }
-
-    .btn9 {
-        font-size: 2.2rem;
-        padding: 1.3rem 3rem;
-    }
-
-
-
-    /*Section9*/
-
-
     .preguntaH {
         font-size: 2.5rem;
 
     }
-
-    .btn9 {
+    .btn9{
         font-size: 1.8rem;
         padding: 1.3rem 2.5rem;
     }
+    .texto9{
+        font-size: 1.1rem;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) and (orientation: portrait){
 
     /* Section 1 */
     #pSection1 {
@@ -1194,6 +1220,7 @@ section {
     }
 
     /* Section 2 */
+  
     .icon1 {
         width: 65px;
     }
@@ -1223,22 +1250,18 @@ section {
     }
 
     /* Section3 */
-    .chatContainer {
+    .chatContainer{
         height: 85%;
     }
-
-    #message1 {
+    #message1{
         width: 75%;
     }
-
-    #message2 {
+    #message2{
         width: 65%;
     }
-
-    #message23 {
+    #message23{
         width: 50%;
     }
-
     /*Section 4*/
 
     .regalo {
@@ -1264,15 +1287,15 @@ section {
     }
 
     /* Section5 */
-    #texto-section5 {
-        top: 50%;
+    #texto-section5{
+        top:50%;
         padding: 1.1rem;
         font-size: 0.65rem;
         max-width: 21rem;
     }
 
     /*seccion 6*/
-    .texto-sec6 {
+    .texto-sec6{
         height: 30%;
         width: 55%;
         left: 20%;
@@ -1280,45 +1303,31 @@ section {
         top: 33%;
     }
 
-    .mensajeSec {
+    .mensajeSec{
         width: 80%;
     }
 
-    .mensajeSec6 {
+    .mensajeSec6{
         width: 60%;
     }
 
 
     /* Section 7 */
-    .texto-section7 {
-        font-size: 0.9rem;
+    .texto-section7{
+        font-size: 1.1rem;
     }
 
-    .text1-sect7 {
+    .text1-sect7{
         padding-left: 15%;
         padding-right: 15%;
 
     }
-
-    .text1-sect7B {
+    .text1-sect7B{
         padding-left: 10%;
         padding-right: 10%;
     }
-
-    #emojis-7 {
+    #emojis-7{
         width: 100px;
-    }
-
-    .mano-cel-izq {
-        padding-top: 110%;
-        margin-left: 4%;
-
-    }
-
-    .mano-cel-der {
-        padding-top: 80%;
-        margin-right: 4%;
-
     }
 
     #textoSec8 {
@@ -1330,20 +1339,35 @@ section {
     .preguntaH {
         font-size: 1.6rem;
     }
-
-    .buttonsDiv {
+    .buttonsDiv{
         width: 100%;
         padding: 0 0.6rem;
     }
 
-    .btn9 {
+    .btn9{
         font-size: 1.3rem;
         padding: 1.3rem 2rem;
     }
+    .texto9{
+        font-size: 0.75rem;
+    }
 
+    .content{
+        padding: 0;
+        margin: 5rem 0 0 0;
+    }
+
+    #mano{
+        width: 100%;
+    }
 
 }
 
+@media (max-width: 375px) and (orientation: portrait){
+    #pulpo{
+        margin-bottom: 35vh;
+    }
+}
 
 @media (max-width: 320px) {
 
@@ -1397,19 +1421,22 @@ section {
     }
 
     /* Section5 */
-    #texto-section5 {
+    #texto-section5{
         top: 55%;
         padding: 1.5rem;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         max-width: 18rem;
     }
-
+    .texto9{
+        font-size: 0.62rem;
+    }
 }
 
 /* MediaQ altura */
 
 /* "orientation: landscape" para saber si el dispositivo esta volteado */
 @media (max-height: 1024px) and (orientation: landscape) {
+
 
     /* Section 1 */
     .section1 {
@@ -1525,11 +1552,11 @@ section {
     }
 
     .caja-texto {
-        padding: 20px 20px;
         width: 90%;
+        padding: 20px 20px;
         margin-top: 3rem;
         margin-bottom: 1rem;
-        font-size: 2.7rem;
+        font-size: 2rem;
         top: 70%;
     }
 
@@ -1544,17 +1571,17 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6 {
+    .texto-sec6{
         min-width: 19%
     }
-
-    .mensajeSec6 {
+    .mensajeSec6{
         width: 75%;
     }
-
-    .mensajeSec {
+    .mensajeSec{
         width: 90%;
     }
+
+
 }
 
 @media (max-height: 768px) and (orientation: landscape) {
@@ -1604,7 +1631,7 @@ section {
         padding: 10px;
         width: 90%;
         margin-bottom: 0rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         top: 70%;
     }
 
@@ -1615,7 +1642,7 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6 {
+    .texto-sec6{
         min-width: 16%
     }
 
@@ -1682,8 +1709,21 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6 {
+    .texto-sec6{
         left: 47.5%;
+    }
+    /* Section 9 */
+    .preguntaH{
+        font-size: 1.5rem;
+    }
+
+    .texto9{
+        font-size: 0.6rem;
+        padding: 4%;
+    }
+    #recuadro{
+        height: 100%;
+        width: 33%;
     }
 }
 
@@ -1766,15 +1806,38 @@ section {
         font-size: 0.7rem;
     }
 
+    .texto-section7{
+        font-size: 0.8rem;
+    }
+    #emojis-7{
+        width: 30%;
+    }
     /* Section 6 */
-    .section6 {
+    .section6{
         height: 110vh;
     }
-
-    .texto-sec6 {
+    .texto-sec6{
         width: 15%;
         min-width: 10%
     }
+
+    /* Section 9 */
+    .preguntaH{
+        font-size: 1.3rem;
+    }
+
+    .texto9{
+        font-size: 0.5rem;
+        padding: 5% 30%;
+    }
+    #recuadro{
+        height: 100%;
+        width: 27%;
+    }
+    .btn9{
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (max-height: 320px) and (orientation: landscape) {
@@ -1866,252 +1929,31 @@ section {
         font-size: 0.6rem;
     }
 
-
-}
-
-/*
-@media (max-width: 1024px) {
-    .section1 {
-        background-image: url("../src/ri-caso1-xs-p1-fondo.jpg");
+    .preguntaH{
+        font-size: 1.2rem;
     }
-
-    .section2 {
-        background-image: url("../src/ri-caso1-xs-p2-fondo.jpg");
-    }
-
-    .corazon {
-        width: 200px;
-    }
-
-    #pSection1 {
-        font-size: 0.6rem;
-    }
-
-    .manos-game {
-        width: 100%;
-    }
-
-    .icon3 {
-        left: 40px;
-        top: 100px;
-    }
-
-    .icon2 {
-        bottom: 20px;
-        left: -20%;
-    }
-
-    .icon1 {
-        right: 250px;
-    }
-
-    #sec4H2 {
-        font-size: 2.5rem;
-    }
-
-    .caja-texto {
-        bottom: 100px;
-        width: 40rem;
-        font-size: 2rem;
-    }
-
-    .caja-texto2 {
-        right: 100px;
-    }
-
-    .text1-sect7 {
-        margin-top: 6rem;
-        font-size: 1.5rem;
-    }
-
-    .text1-sect7B {
-
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 900px) {
-    #texto-section5 {
-        left: 15%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .corazon {
-        width: 200px;
-    }
-
-    .section1 p {
-        max-width: 400px;
+    .btn9{
         font-size: 1rem;
     }
-
-    .section2 {
-        height: 70vh;
+    #recuadro{
+        width: 37%;
+    }
+    .texto9{
+        font-size: 0.5rem;
+        padding: 0% 20% 0 25%;
     }
 
-    .icon4 {
-        width: 50px;
+    .preguntaH{
+        font-size: 1.1rem;
     }
 
-    .icon3 {
-        left: 40px;
-        top: 100px;
+    .texto9{
+        font-size: 0.4rem;
+        padding: 5% 30%;
+    }
+    #recuadro{
+        width: 25%;
     }
 
-    .icon2 {
-        width: 60px;
-        bottom: 20px;
-        left: 250px;
-    }
 
-    .icon1 {
-        width: 40px;
-        right: 200px;
-    }
-
-    .section4 {
-        height: 70vh;
-    }
-
-    .regalo {
-        width: 90%;
-    }
-
-    .caja-texto {
-        bottom: 15px;
-        width: 450px;
-        line-height: 20px;
-    }
-
-    .section4 h2 {
-        top: 125px;
-    }
-
-    .caja-texto2 {
-        right: 10px;
-        top: 55%;
-    }
-
-    .mano-cel-izq {
-        left: 0;
-    }
-
-    .mano-cel-der {
-        right: 0;
-    }
-
-    .texto-section7 {
-        width: 300px;
-        font-size: 1rem;
-    }
 }
-
-@media (max-width: 425px) {
-
-    .section1 {
-        height: 80vh;
-    }
-
-    .corazon {
-        width: 150px;
-    }
-
-    .section1 p {
-        max-width: 300px;
-    }
-
-    .section2 {
-        height: 50vh;
-    }
-
-    .icon4 {
-        width: 30px;
-    }
-
-    .icon3 {
-        width: 30px;
-        left: 40px;
-        top: 120px;
-    }
-
-    .icon2 {
-        width: 30px;
-        bottom: 10px;
-        left: 120px;
-    }
-
-    .icon1 {
-        width: 25px;
-        right: 100px;
-        bottom: 20px;
-    }
-
-    .section3 {
-        height: auto;
-    }
-
-    .chat {
-        padding: 20px 0;
-    }
-
-    .section4 {
-        height: 60vh;
-        padding: 50px 0;
-    }
-
-    .regalo {
-        width: 95%;
-        align-self: self-start;
-    }
-
-    .section4 h2 {
-        top: unset;
-        margin-top: 25px;
-        font-size: 1.5rem;
-    }
-
-    .caja-texto {
-        width: 350px;
-        padding: 10px;
-        align-self: flex-end;
-        bottom: unset;
-    }
-
-    .section5 {
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .caja-texto2 {
-        top: unset;
-        right: unset;
-        width: 95%;
-        margin-top: 100px;
-    }
-
-
-    .mano-cel-izq {
-        height: 50%;
-        bottom: unset;
-        top: 100px;
-    }
-
-    .mano-cel-der {
-        height: 50%;
-        top: 100px;
-    }
-
-    .texto-section7 {
-        text-align: center;
-    }
-
-    .chat-8 {
-        width: 100%;
-        height: auto;
-    }
- 
-*/
