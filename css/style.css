@@ -13,7 +13,7 @@ section {
 
 /*section 1*/
 .section1 {
-    height: 110vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -602,8 +602,11 @@ section {
     align-self: center;
     color: #3b3353;
     font-weight: 600;
-    display: grid;
+    display: flex;
     padding: 1rem;
+    font-size: 1.3rem;
+    flex-direction: column;
+    height: 55%;
 }
 
 #icon19 {
