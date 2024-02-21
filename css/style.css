@@ -321,12 +321,20 @@ section {
     z-index: -1;
 }
 
+#content6Div {
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+}
+
+#content8Div {
+    align-items: end;
+}
+
 .content {
     display: grid;
     justify-content: center;
     height: 100vh;
-
-    padding: 10rem;
+    padding: 0rem;
     padding-bottom: 0;
 
 }
@@ -334,6 +342,7 @@ section {
 .img {
     width: 80%;
     justify-self: center;
+    padding-bottom: 0rem;
 }
 
 .containerDiv {
@@ -628,7 +637,7 @@ section {
     width: 4rem;
 }
 
-#volverBtn{
+#volverBtn {
     width: 50%;
     border: none;
     background-color: transparent;
@@ -642,7 +651,7 @@ section {
 
 
 
-@media (max-width: 1024px) and (orientation: portrait){
+@media (max-width: 1024px) and (orientation: portrait) {
 
     /* Section 1 */
     .section1 {
@@ -689,7 +698,7 @@ section {
 
     .mision-cumplida {
         margin-bottom: 45vh;
-        
+
     }
 
     .icon1 {
@@ -799,16 +808,18 @@ section {
         text-align: left;
         padding: 2rem 5.6rem 2rem 3.1rem;
     }
+
     /* Section 5 */
 
-    .room1{
+    .room1 {
         width: 100%;
     }
 
-    .room2{
+    .room2 {
         width: 100%;
     }
-    #texto-section5{
+
+    #texto-section5 {
         top: 65%;
         padding: 2.5rem;
         font-size: 1.4rem;
@@ -819,10 +830,11 @@ section {
     }
 
     /* Section 6 */
-    .section6{
+    .section6 {
         height: 100vh;
     }
-    .manos-chat{
+
+    .manos-chat {
         bottom: 0;
         height: 90vh;
         width: 100vw;
@@ -844,7 +856,7 @@ section {
     }
 
     /* Section 7 */
-    .texto-section7{
+    .texto-section7 {
         font-size: 2.3rem;
         text-align: center;
         width: 100%;
@@ -852,45 +864,50 @@ section {
         height: 10%;
         margin: 0 10%;
     }
-    .text1-sect7{
+
+    .text1-sect7 {
         padding-top: 15%;
     }
-    .text1-sect7B{
+
+    .text1-sect7B {
         align-self: normal;
         padding-top: 60%;
     }
 
-    .text1-sect7B p{
+    .text1-sect7B p {
         margin-bottom: 10px;
     }
 
-    #emojis-7{
+    #emojis-7 {
         width: 250px;
-    } 
+    }
 
-     #emojis-sect7{
-       padding-left: 35%;
-       width: 100%;
-    } 
+    #emojis-sect7 {
+        padding-left: 35%;
+        width: 100%;
+    }
 
-    .mano-cel-izq{
+    .mano-cel-izq {
         padding-top: 100%;
         margin-left: 8%;
         height: 100%;
         width: 80%;
 
-    } 
-    .mano-cel-der{
+    }
+
+    .mano-cel-der {
         padding-top: 90%;
         margin-right: 8%;
         height: 100%;
         width: 80%;
 
-    } 
-    .texto-section7{
+    }
+
+    .texto-section7 {
         font-size: 2.8rem;
     }
-    #mano-cel-izquierda{
+
+    #mano-cel-izquierda {
         display: block;
         position: absolute;
         left: 10%;
@@ -898,8 +915,8 @@ section {
         z-index: 1;
         width: 50%;
     }
-    
-    #mano-cel-derecha{
+
+    #mano-cel-derecha {
         position: absolute;
         left: 45%;
         top: 52%;
@@ -907,12 +924,14 @@ section {
         width: 50%;
     }
 
-    #mano,#mano2{
+    #mano,
+    #mano2 {
         padding: 30% 0 0 0;
         width: 90%;
         height: 80%;
     }
-    .content6{
+
+    .content6 {
         padding: 0;
     }
 
@@ -934,37 +953,40 @@ section {
         text-align: center;
 
     }
-    .buttonsDiv{
+
+    .buttonsDiv {
         width: 100%;
         padding: 0 3rem;
     }
 
-    .btn9{
+    .btn9 {
         text-align: left;
         font-size: 2.5rem;
         padding: 1.3rem 5rem;
         border-radius: 40px;
     }
 
-    #azul{
+    #azul {
         width: 100%;
     }
-    #recuadro{
+
+    #recuadro {
         width: 90%;
     }
-    .texto9{
+
+    .texto9 {
         max-width: 85%;
         font-size: 1.8rem;
     }
 
-    #rojo{
+    #rojo {
         width: 100%;
     }
 
 
 }
 
-@media (max-width: 768px) and (orientation: portrait){
+@media (max-width: 768px) and (orientation: portrait) {
 
     /* Section 1 */
     #pSection1 {
@@ -1061,35 +1083,37 @@ section {
         font-size: 2rem;
     }
 
-    #texto-section5{
+    #texto-section5 {
         padding: 2.5rem;
         font-size: 1.1rem;
         max-width: 40rem;
     }
 
-    .texto-section7{
+    .texto-section7 {
         font-size: 1.7rem;
     }
 
     /*Section 6*/
-    #mano{
+    #mano {
         margin-top: 10rem;
     }
 
     /*Section9*/
-    .sec9{
+    .sec9 {
         height: 130vh;
     }
-    .btn9{
+
+    .btn9 {
         font-size: 2.2rem;
         padding: 1.3rem 3rem;
     }
-    .texto9{
+
+    .texto9 {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width: 640px) and (orientation: portrait){
+@media (max-width: 640px) and (orientation: portrait) {
 
     /* Section 1 */
     #pSection1 {
@@ -1098,9 +1122,10 @@ section {
     }
 
     /* Section 2 */
-    #pulpo{
+    #pulpo {
         margin-bottom: 30vh;
     }
+
     .manos-game {
         position: relative;
     }
@@ -1139,6 +1164,7 @@ section {
     #message1 {
         width: 70%;
     }
+
     #message23 {
         width: 50%;
     }
@@ -1146,6 +1172,7 @@ section {
     #message2 {
         width: 60%;
     }
+
     #pareja-chico {
         width: 20%;
         margin-right: 50%;
@@ -1188,6 +1215,7 @@ section {
         width: 75%;
         font-size: 1.6rem;
     }
+
     .caja-texto {
         width: 75%;
         font-size: 1.2rem;
@@ -1195,23 +1223,24 @@ section {
         padding-left: 2rem;
         padding-right: 3rem;
     }
+
     /* Section5 */
-    #texto-section5{
+    #texto-section5 {
         padding: 2rem;
         font-size: 0.8rem;
     }
 
-    .texto-section7{
+    .texto-section7 {
         font-size: 1.1rem;
     }
 
-    #emojis-7{
+    #emojis-7 {
         width: 150px;
     }
 
-    #emojis-sect7{
-       padding-left: 25%;
-       width: 100%;
+    #emojis-sect7 {
+        padding-left: 25%;
+        width: 100%;
     }
 
     /*Section9*/
@@ -1219,16 +1248,18 @@ section {
         font-size: 2.5rem;
 
     }
-    .btn9{
+
+    .btn9 {
         font-size: 1.8rem;
         padding: 1.3rem 2.5rem;
     }
-    .texto9{
+
+    .texto9 {
         font-size: 1.1rem;
     }
 }
 
-@media (max-width: 425px) and (orientation: portrait){
+@media (max-width: 425px) and (orientation: portrait) {
 
     /* Section 1 */
     #pSection1 {
@@ -1236,7 +1267,7 @@ section {
     }
 
     /* Section 2 */
-  
+
     .icon1 {
         width: 65px;
     }
@@ -1266,18 +1297,22 @@ section {
     }
 
     /* Section3 */
-    .chatContainer{
+    .chatContainer {
         height: 85%;
     }
-    #message1{
+
+    #message1 {
         width: 75%;
     }
-    #message2{
+
+    #message2 {
         width: 65%;
     }
-    #message23{
+
+    #message23 {
         width: 50%;
     }
+
     /*Section 4*/
 
     .regalo {
@@ -1303,15 +1338,15 @@ section {
     }
 
     /* Section5 */
-    #texto-section5{
-        top:50%;
+    #texto-section5 {
+        top: 50%;
         padding: 1.1rem;
         font-size: 0.65rem;
         max-width: 21rem;
     }
 
     /*seccion 6*/
-    .texto-sec6{
+    .texto-sec6 {
         height: 30%;
         width: 55%;
         left: 20%;
@@ -1319,30 +1354,32 @@ section {
         top: 33%;
     }
 
-    .mensajeSec{
+    .mensajeSec {
         width: 80%;
     }
 
-    .mensajeSec6{
+    .mensajeSec6 {
         width: 60%;
     }
 
 
     /* Section 7 */
-    .texto-section7{
+    .texto-section7 {
         font-size: 1.1rem;
     }
 
-    .text1-sect7{
+    .text1-sect7 {
         padding-left: 15%;
         padding-right: 15%;
 
     }
-    .text1-sect7B{
+
+    .text1-sect7B {
         padding-left: 10%;
         padding-right: 10%;
     }
-    #emojis-7{
+
+    #emojis-7 {
         width: 100px;
     }
 
@@ -1355,32 +1392,34 @@ section {
     .preguntaH {
         font-size: 1.6rem;
     }
-    .buttonsDiv{
+
+    .buttonsDiv {
         width: 100%;
         padding: 0 0.6rem;
     }
 
-    .btn9{
+    .btn9 {
         font-size: 1.3rem;
         padding: 1.3rem 2rem;
     }
-    .texto9{
+
+    .texto9 {
         font-size: 0.75rem;
     }
 
-    .content{
+    .content {
         padding: 0;
         margin: 5rem 0 0 0;
     }
 
-    #mano{
+    #mano {
         width: 100%;
     }
 
 }
 
-@media (max-width: 375px) and (orientation: portrait){
-    #pulpo{
+@media (max-width: 375px) and (orientation: portrait) {
+    #pulpo {
         margin-bottom: 35vh;
     }
 }
@@ -1437,13 +1476,14 @@ section {
     }
 
     /* Section5 */
-    #texto-section5{
+    #texto-section5 {
         top: 55%;
         padding: 1.5rem;
         font-size: 0.6rem;
         max-width: 18rem;
     }
-    .texto9{
+
+    .texto9 {
         font-size: 0.62rem;
     }
 }
@@ -1587,13 +1627,15 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         min-width: 19%
     }
-    .mensajeSec6{
+
+    .mensajeSec6 {
         width: 75%;
     }
-    .mensajeSec{
+
+    .mensajeSec {
         width: 90%;
     }
 
@@ -1658,7 +1700,7 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         min-width: 16%
     }
 
@@ -1725,19 +1767,21 @@ section {
     }
 
     /* Section 6 */
-    .texto-sec6{
+    .texto-sec6 {
         left: 47.5%;
     }
+
     /* Section 9 */
-    .preguntaH{
+    .preguntaH {
         font-size: 1.5rem;
     }
 
-    .texto9{
+    .texto9 {
         font-size: 0.6rem;
         padding: 4%;
     }
-    #recuadro{
+
+    #recuadro {
         height: 100%;
         width: 33%;
     }
@@ -1822,35 +1866,40 @@ section {
         font-size: 0.7rem;
     }
 
-    .texto-section7{
+    .texto-section7 {
         font-size: 0.8rem;
     }
-    #emojis-7{
+
+    #emojis-7 {
         width: 30%;
     }
+
     /* Section 6 */
-    .section6{
+    .section6 {
         height: 110vh;
     }
-    .texto-sec6{
+
+    .texto-sec6 {
         width: 15%;
         min-width: 10%
     }
 
     /* Section 9 */
-    .preguntaH{
+    .preguntaH {
         font-size: 1.3rem;
     }
 
-    .texto9{
+    .texto9 {
         font-size: 0.5rem;
         padding: 5% 30%;
     }
-    #recuadro{
+
+    #recuadro {
         height: 100%;
         width: 27%;
     }
-    .btn9{
+
+    .btn9 {
         font-size: 0.9rem;
     }
 
@@ -1945,29 +1994,33 @@ section {
         font-size: 0.6rem;
     }
 
-    .preguntaH{
+    .preguntaH {
         font-size: 1.2rem;
     }
-    .btn9{
+
+    .btn9 {
         font-size: 1rem;
     }
-    #recuadro{
+
+    #recuadro {
         width: 37%;
     }
-    .texto9{
+
+    .texto9 {
         font-size: 0.5rem;
         padding: 0% 20% 0 25%;
     }
 
-    .preguntaH{
+    .preguntaH {
         font-size: 1.1rem;
     }
 
-    .texto9{
+    .texto9 {
         font-size: 0.4rem;
         padding: 5% 30%;
     }
-    #recuadro{
+
+    #recuadro {
         width: 25%;
     }
 

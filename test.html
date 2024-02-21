@@ -101,7 +101,7 @@
     <div class="container6">
 
         <div class="background"></div>
-        <div class="content content6">
+        <div class="content content6" id="content6Div">
             <img class="img" id="mano" src="./src/2.gif" alt="">
         </div>
 
@@ -136,7 +136,7 @@
 
         </div>
 
-        <div class="content content6">
+        <div class="content content6" id="content8Div">
 
             <img class="img" id="mano2" src="./src/1.gif" alt="" style="visibility: hidden;">
 
@@ -174,7 +174,7 @@
                 <img id="icon39" src="./src/correcto-spider.svg">
                 <p>¿Qué es una relación impropia?</p>
                 <a style="text-decoration: underline">Ver aquí.</a>
-                <button id="volverBtn" onclick="volverPregunta()" >Volver a la pregunta</button>
+                <button id="volverBtn" onclick="volverPregunta()">Volver a la pregunta</button>
             </div>
         </div>
 
@@ -192,7 +192,7 @@
                 <img id="icon39" src="./src/incorrecto-ico3.svg">
                 <p>¿Qué es una relación impropia?</p>
                 <a style="text-decoration: underline">Ver aquí.</a>
-                <button id="volverBtn" onclick="volverPregunta()" >Volver a la pregunta</button>
+                <button id="volverBtn" onclick="volverPregunta()">Volver a la pregunta</button>
             </div>
         </div>
     </section>
@@ -258,14 +258,14 @@
             // Mostrar la respuesta correspondiente
             if (color === "azul") {
                 document.getElementById("azul").style.display = "grid";
-            } 
+            }
             if (color === "rojo") {
                 document.getElementById("rojo").style.display = "grid";
             }
 
             // Ocultar la sección de la pregunta
             document.getElementById("pregunta").style.display = "none";
-            
+
         }
 
     </script>
