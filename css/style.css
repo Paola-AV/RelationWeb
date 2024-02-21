@@ -579,6 +579,7 @@ section {
     margin: 1rem;
     color: #FFF;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 #azul {
@@ -625,6 +626,18 @@ section {
 
 #icon39 {
     width: 4rem;
+}
+
+#volverBtn{
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: #3b3353;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    justify-self: flex-end;
+    align-self: flex-end;
 }
 
 

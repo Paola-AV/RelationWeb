@@ -34,7 +34,8 @@
         <section class="section2 d-flex justify-content-center" id="section2">
             <div id="content"></div>
             <img class="manos-game" data-aos="fade-up" id="manos-game" src="./src/c1-p2-manos.svg" alt="">
-            <img class="mision-cumplida wiggle" data-aos="fade" data-aos-delay="500" id="pulpo" src="./src/octupus.svg" alt="">
+            <img class="mision-cumplida wiggle" data-aos="fade" data-aos-delay="500" id="pulpo" src="./src/octupus.svg"
+                alt="">
             <img class="icon1 wiggle" src="./src/coin-2.svg" style="">
             <img class="icon2 wiggle" src="./src/diamond-2.svg" style="">
             <img class="icon3 wiggle" src="./src/star2.svg" style="">
@@ -110,7 +111,7 @@
             </div>
 
 
-            <div class="texto-section7" >
+            <div class="texto-section7">
                 <div class="text1-sect7">
                     <p class="">Cami y Sebas tenían una
                         relación a distancia. Sebas constantemente le pedía fotos</p>
@@ -173,6 +174,7 @@
                 <img id="icon39" src="./src/correcto-spider.svg">
                 <p>¿Qué es una relación impropia?</p>
                 <a style="text-decoration: underline">Ver aquí.</a>
+                <button id="volverBtn" onclick="volverPregunta()" >Volver a la pregunta</button>
             </div>
         </div>
 
@@ -190,6 +192,7 @@
                 <img id="icon39" src="./src/incorrecto-ico3.svg">
                 <p>¿Qué es una relación impropia?</p>
                 <a style="text-decoration: underline">Ver aquí.</a>
+                <button id="volverBtn" onclick="volverPregunta()" >Volver a la pregunta</button>
             </div>
         </div>
     </section>
@@ -215,7 +218,7 @@
             // Obtener la posición del elemento respecto a la ventana
             var alturaVentana = window.innerHeight;
 
-            
+
 
             // Si el elemento está en el área visible de la ventana, agrega la clase, de lo contrario, quítala
             if (posicion <= alturaVentana - 860) {
@@ -226,7 +229,7 @@
 
                 }, 800);
             }
-             else {
+            else {
                 mano.classList.remove('fadeOut');
                 mano1.style.display = "none";
                 mano2.style.visibility = "hidden";
@@ -240,7 +243,7 @@
 
                 }, 1500);
             }
-             else {
+            else {
                 mano1.classList.remove('fadeOut');
                 mano2.style.visibility = "hidden";
                 mano2.classList.remove('fadeIn');
@@ -251,22 +254,35 @@
 
     <script>
         function mostrarRespuesta(color) {
-            var respuestaTexto = document.getElementById("textoRespuesta");
-            var respuestaDiv = document.getElementById("respuesta");
-            var azul = document.getElementById("azul");
-            var azul = document.getElementById("rojo");
-
-            // Dependiendo del color seleccionado, mostrar una respuesta diferente
+            document.getElementById("volverBtn").style.display = "block";
+            // Mostrar la respuesta correspondiente
             if (color === "azul") {
-                respuestaDiv = document.getElementById("azul").style.display = "grid";
-            } else if (color === "rojo") {
-                respuestaDiv = document.getElementById("rojo").style.display = "grid";
+                document.getElementById("azul").style.display = "grid";
+            } 
+            if (color === "rojo") {
+                document.getElementById("rojo").style.display = "grid";
             }
-
 
             // Ocultar la sección de la pregunta
             document.getElementById("pregunta").style.display = "none";
+            
         }
+
+    </script>
+
+    <script>
+        function volverPregunta() {
+            // Mostrar la sección de la pregunta
+            document.getElementById("pregunta").style.display = "block";
+
+            // Ocultar las respuestas
+            document.getElementById("azul").style.display = "none";
+            document.getElementById("rojo").style.display = "none";
+
+            // Ocultar el botón de volver
+            document.getElementById("volverBtn").style.display = "none";
+        }
+
     </script>
 
     <script>
