@@ -106,10 +106,10 @@
         </div>
 
         <div class="contenttexto" id="mano1" style="display: none;">
-            <div id="mano-cel-izquierda">
-                <img class="mano-cel-izq" src="./src/7-mano-izq.svg" alt="">
+            
+            <div class="imgSec7">
+                <img id="mano-cel-izquierda" src="./src/ManosJuntas.svg">
             </div>
-
 
             <div class="texto-section7">
                 <div class="text1-sect7">
@@ -129,9 +129,7 @@
                 </div>
 
             </div>
-            <div id="mano-cel-derecha">
-                <img class="mano-cel-der" src="./src/7-mano-der.svg" alt="">
-            </div>
+            
 
 
         </div>
@@ -214,7 +212,7 @@
             var mano1 = document.getElementById('mano1');
             var mano2 = document.getElementById('mano2');
             var posicion = mano.getBoundingClientRect(mano).top;
-            var posicion1 = mano1.getBoundingClientRect(mano1).top;
+            var posicion1 = mano1.getBoundingClientRect(mano1).bottom;
             // Obtener la posición del elemento respecto a la ventana
             var alturaVentana = window.innerHeight;
 
@@ -235,7 +233,7 @@
                 mano2.style.visibility = "hidden";
             }
 
-            if (posicion1 <= alturaVentana - 980) {
+            if (posicion1 <= alturaVentana - 580) {
                 mano1.classList.add('fadeOut');
                 setTimeout(() => {
                     mano2.style.visibility = "visible;"

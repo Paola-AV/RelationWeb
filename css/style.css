@@ -53,7 +53,7 @@ section {
 
 #content {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
@@ -361,15 +361,21 @@ section {
     display: flex;
     width: 100%;
     height: 100vh;
-    justify-content: space-between;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
+.imgSec7{
+    position: absolute;
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
 
 #mano-cel-izquierda {
     height: auto;
     width: 100%;
-    display: grid;
-    justify-content: end;
 }
 
 /*section 6*/
@@ -462,10 +468,9 @@ section {
 }
 
 .texto-section7 {
-
-
+    display: grid;
     font-size: 1.2rem;
-    width: 80%;
+    width: 20%;
     color: white;
     position: relative;
     z-index: 3;
@@ -857,21 +862,20 @@ section {
 
     /* Section 7 */
     .texto-section7 {
-        font-size: 2.3rem;
         text-align: center;
-        width: 100%;
+        width: 30%;
         font-weight: 500;
-        height: 10%;
+        height: 30%;
         margin: 0 10%;
     }
-
+    
     .text1-sect7 {
         padding-top: 15%;
     }
 
     .text1-sect7B {
         align-self: normal;
-        padding-top: 60%;
+        padding-top: 100%;
     }
 
     .text1-sect7B p {
@@ -879,7 +883,11 @@ section {
     }
 
     #emojis-7 {
-        width: 250px;
+        width: 40%;
+    }
+
+    #emoji-7{
+        width: 20%;
     }
 
     #emojis-sect7 {
@@ -903,17 +911,12 @@ section {
 
     }
 
-    .texto-section7 {
-        font-size: 2.8rem;
-    }
-
     #mano-cel-izquierda {
-        display: block;
         position: absolute;
-        left: 10%;
-        top: 50%;
+        justify-self: center;
+        align-self: center;
         z-index: 1;
-        width: 50%;
+        width: 90%;
     }
 
     #mano-cel-derecha {
@@ -1089,9 +1092,7 @@ section {
         max-width: 40rem;
     }
 
-    .texto-section7 {
-        font-size: 1.7rem;
-    }
+   
 
     /*Section 6*/
     #mano {
@@ -1234,9 +1235,7 @@ section {
         font-size: 1.1rem;
     }
 
-    #emojis-7 {
-        width: 150px;
-    }
+  
 
     #emojis-sect7 {
         padding-left: 25%;
@@ -1639,6 +1638,11 @@ section {
         width: 90%;
     }
 
+    /*section 7*/
+     .texto-section7 {
+        text-align: center;
+        width: 30%;
+    }
 
 }
 
