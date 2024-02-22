@@ -45,7 +45,7 @@ section {
     position: relative;
     opacity: 1;
     z-index: 11;
-    height: 110vh;
+    height: 100vh;
     transition: background-image 4s ease-out, opacity 0 ease-out;
     background-size: 100% 100%;
 
@@ -317,7 +317,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../src/fondo68.svg') center/cover no-repeat;
+    background: url('../src/p7-fondo_completo.svg') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -945,9 +945,10 @@ section {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         padding-top: 2rem;
+        height: 130vh;
     }
 
     .preguntaH {
@@ -978,6 +979,7 @@ section {
     }
 
     .texto9 {
+        padding-top: 2rem;
         max-width: 85%;
         font-size: 1.8rem;
     }
@@ -1101,7 +1103,7 @@ section {
 
     /*Section9*/
     .sec9 {
-        height: 130vh;
+        height: 140vh;
     }
 
     .btn9 {
@@ -1109,9 +1111,13 @@ section {
         padding: 1.3rem 3rem;
     }
 
-    .texto9 {
-        font-size: 1.5rem;
+    
+    
+    #recuadro {
+        width: 95%;
+        height: 100%;
     }
+
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -1254,8 +1260,11 @@ section {
     }
 
     .texto9 {
-        font-size: 1.1rem;
+        padding-top: 0rem;
+        font-size: 0.8rem;
+        height: 30%;
     }
+    
 }
 
 @media (max-width: 425px) and (orientation: portrait) {
@@ -1365,6 +1374,9 @@ section {
     /* Section 7 */
     .texto-section7 {
         font-size: 1.1rem;
+        width: 80%;
+        height: 20%;
+        align-self: start;
     }
 
     .text1-sect7 {
@@ -1376,6 +1388,7 @@ section {
     .text1-sect7B {
         padding-left: 10%;
         padding-right: 10%;
+        padding-top: 0rem;
     }
 
     #emojis-7 {
@@ -1394,7 +1407,7 @@ section {
 
     .buttonsDiv {
         width: 100%;
-        padding: 0 0.6rem;
+        
     }
 
     .btn9 {
@@ -1420,6 +1433,13 @@ section {
 @media (max-width: 375px) and (orientation: portrait) {
     #pulpo {
         margin-bottom: 35vh;
+    }
+
+    .texto9 {
+        font-size: 0.8rem;
+        height: 15%;
+        padding-top: 4rem;
+        align-self: start;
     }
 }
 
